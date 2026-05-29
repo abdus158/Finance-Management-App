@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#bbc9ca",
+                        "inverse-primary": "#006970",
+                        "background": "#0e1415",
+                        "surface-tint": "#50d9e4",
+                        "on-secondary": "#440087",
+                        "tertiary-fixed-dim": "#d2bcff",
+                        "on-tertiary-fixed-variant": "#5621b1",
+                        "primary-fixed": "#7bf4ff",
+                        "error-container": "#93000a",
+                        "surface-container-lowest": "#090f10",
+                        "on-primary-fixed": "#002022",
+                        "primary": "#50d9e4",
+                        "surface-container": "#1b2121",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#00363a",
+                        "surface-container-highest": "#303636",
+                        "tertiary-container": "#b898ff",
+                        "inverse-surface": "#dee4e4",
+                        "error": "#ffb4ab",
+                        "outline": "#869394",
+                        "secondary-fixed": "#eddcff",
+                        "on-secondary-fixed": "#290055",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#2b3132",
+                        "on-secondary-fixed-variant": "#610bb8",
+                        "on-secondary-container": "#cca8ff",
+                        "tertiary-fixed": "#eaddff",
+                        "surface-variant": "#303636",
+                        "secondary-fixed-dim": "#d7baff",
+                        "outline-variant": "#3c494a",
+                        "on-tertiary-fixed": "#24005b",
+                        "surface": "#0e1415",
+                        "primary-fixed-dim": "#50d9e4",
+                        "primary-container": "#22bbc6",
+                        "on-surface": "#dee4e4",
+                        "surface-container-high": "#252b2c",
+                        "on-background": "#dee4e4",
+                        "on-tertiary-container": "#4d12a8",
+                        "on-tertiary": "#3d008f",
+                        "secondary-container": "#6311bb",
+                        "secondary": "#d7baff",
+                        "surface-container-low": "#171d1d",
+                        "tertiary": "#d2bcff",
+                        "on-primary-fixed-variant": "#004f54",
+                        "surface-dim": "#0e1415",
+                        "surface-bright": "#343a3b",
+                        "on-primary-container": "#00464b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "max-width": "1440px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Space Grotesk"],
+                        "headline-lg": ["Outfit"],
+                        "display-lg": ["Outfit"],
+                        "body-lg": ["Space Grotesk"],
+                        "label-md": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "body-md": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #06030d; /* Brand background override */
+            color: #dee4e4;
+        }
+        .glass-panel {
+            background: rgba(27, 33, 33, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(240, 240, 240, 0.1);
+        }
+        .neo-glow-teal {
+            box-shadow: 0 0 15px rgba(34, 187, 198, 0.4);
+        }
+        .neo-glow-purple {
+            box-shadow: 0 0 15px rgba(157, 92, 246, 0.4);
+        }
+        .hex-logo {
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+        .square-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 0px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation Header -->
+<header class="w-full top-0 sticky z-50 bg-background/40 backdrop-blur-xl border-b border-on-surface/10 shadow-[0_0_15px_rgba(34,187,198,0.2)] flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16">
+<div class="flex items-center gap-4">
+<div class="hex-logo w-10 h-10 bg-primary flex items-center justify-center font-bold text-on-primary">
+                EN
+            </div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">Command Settings</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<nav class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Assets</a>
+<a class="text-primary font-bold" href="#">Security</a>
+</nav>
+<div class="w-10 h-10 rounded-full border border-primary/30 p-0.5 overflow-hidden">
+<img alt="Alex Sterling" class="w-full h-full object-cover rounded-full" data-alt="A professional portrait of a man with silver-toned hair and a sharp, modern suit. He is set against a dark, futuristic background with subtle teal neon lighting reflecting off glass surfaces. The style is high-definition digital photography with deep contrast and a cool, sophisticated color palette that matches the neo-cyber aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC1jrtDNUfS3CJG4jbVQzoc0iy_VwLBMJ2Y2f4u_WNkz2STacKqmFOGvgCHo8JIDGD8P1EugygUtVfnR8GtpOPsmNaXfvFoe38jXxgu-sCeTptceBr0if6vVyJpSkpYtyIMcSCAjiKh3Wxr6A3YZpnwEy-usYnxp-J4JDaSI-jkFj4tLG7waqsuT-36tSP3IQhuB7VRqghMUxfsLtzFKeM2r1EidqjlATRBMm-Q5sIJngWRoYx-5Q1alJd7Z7y70wjqp4eqjpRi-qM"/>
+</div>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Navigation Sidebar (Desktop) -->
+<div class="hidden md:block md:col-span-3">
+<div class="glass-panel rounded-xl p-6 flex flex-col gap-4">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border border-primary/20">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="A futuristic portrait of a tech executive Alex Sterling. The lighting is low-key with sharp highlights of teal and purple. The overall mood is mysterious yet authoritative, set in a sleek digital environment with glowing data interfaces in the background blur." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_466O25ngXbIWJuZUuJv8wPRHty2--349Wn8xo3OEbIyu7xJHhqsEjd3DpQwqPx7Cmgi4ZpopPUdsfDWG1Oy48q65T4veNT17WxygnzEhH-w7nExVjYnqffIZQSCUpEs1nqlWHitp2-Mgcw9lztwYWkcwWJYHcTYO2PObKVt_eRWoB2YXBPRau2JSWonqJFyihp9rfCjlAPiEqkBbUFRV1OWMc2ia5NmBAlmPDVYbKHPhNdhUyKsZbYqksMns9xDQBWbIoV3C0rCq"/>
+</div>
+<div>
+<p class="font-headline-md text-label-md text-primary">Alex Sterling</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Premium Member</p>
+</div>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/20 text-primary border-l-4 border-primary" href="#">
+<span class="material-symbols-outlined">shield</span> Security Settings
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">person</span> Switch to Personal
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">business_center</span> Switch to Business
+                        </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-variant transition-colors" href="#">
+<span class="material-symbols-outlined">help</span> Help Support
+                        </a>
+</nav>
+</div>
+</div>
+<!-- Right Column: Settings Content -->
+<div class="md:col-span-9 flex flex-col gap-8">
+<!-- Section 1: Security -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<h2 class="font-headline-lg text-headline-lg">Security</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="glass-panel rounded-xl p-6 flex items-center justify-between group">
+<div>
+<p class="font-headline-md text-body-lg text-on-surface">Face ID / Biometrics</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">Enable instant biometric unlocking</p>
+</div>
+<button class="w-12 h-6 rounded-full bg-primary-container relative transition-all neo-glow-teal">
+<div class="absolute right-1 top-1 w-4 h-4 bg-on-primary rounded-full"></div>
+</button>
+</div>
+<div class="glass-panel rounded-xl p-6 flex items-center justify-between">
+<div>
+<p class="font-headline-md text-body-lg text-on-surface">Privacy Mode</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">Hide Balances on home screen</p>
+</div>
+<button class="w-12 h-6 rounded-full bg-surface-container-highest relative transition-all">
+<div class="absolute left-1 top-1 w-4 h-4 bg-outline rounded-full"></div>
+</button>
+</div>
+<div class="md:col-span-2 glass-panel rounded-xl p-6 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="p-3 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">timer</span>
+</div>
+<div>
+<p class="font-headline-md text-body-lg text-on-surface">Auto-Lock Timer</p>
+<p class="font-body-md text-label-sm text-on-surface-variant">Lock app after inactivity</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label-md text-primary">5 Minutes</span>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Data & Sync -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary">cloud_done</span>
+<h2 class="font-headline-lg text-headline-lg">Data &amp; Sync</h2>
+</div>
+<div class="relative overflow-hidden glass-panel rounded-xl p-8 border-l-4 border-secondary">
+<div class="absolute top-[-20%] right-[-10%] opacity-20">
+<span class="material-symbols-outlined text-[160px] text-secondary" style="font-variation-settings: 'FILL' 1;">cloud_sync</span>
+</div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary text-label-sm font-label-sm mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                                    Cloud Sync Active
+                                </div>
+<h3 class="font-headline-lg text-headline-md text-on-surface mb-2">Omni-Channel Synchronization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Last sync: <span class="text-secondary font-bold">2 minutes ago</span></p>
+<p class="font-body-md text-label-sm text-outline mt-1">AWS US-East Global Backbone (Encrypted AES-256)</p>
+</div>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold font-label-md transition-all neo-glow-purple active:scale-95 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">sync</span>
+                                Force Manual Sync
+                            </button>
+</div>
+</div>
+</section>
+<!-- Section 3: Account Profiles -->
+<section class="mb-24">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">account_tree</span>
+<h2 class="font-headline-lg text-headline-lg">Account Profiles</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Business Profile -->
+<div class="glass-panel rounded-xl p-6 border-t-2 border-primary group hover:border-primary transition-all">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">business_center</span>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-1 bg-primary/10 text-primary border border-primary/30 rounded">INACTIVE</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Business Profile</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Manage corporate assets, payroll, and business taxation settings.</p>
+<button class="w-full py-3 rounded-lg border border-primary/50 text-primary font-bold hover:bg-primary/10 transition-colors">
+                                Switch to Business
+                            </button>
+</div>
+<!-- Personal Profile -->
+<div class="glass-panel rounded-xl p-6 border-t-2 border-primary bg-primary/5 transition-all">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 bg-primary rounded-lg flex items-center justify-center text-on-primary neo-glow-teal">
+<span class="material-symbols-outlined text-3xl">person</span>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-1 bg-primary text-on-primary rounded">ACTIVE</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Personal Profile</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Alex Sterling's private investments, crypto wallets, and daily expenses.</p>
+<button class="w-full py-3 rounded-lg bg-surface-container-highest text-on-surface-variant font-bold cursor-not-allowed">
+                                Current Profile
+                            </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-full bg-surface-container/30 backdrop-blur-2xl border-t border-on-surface/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 px-2 pb-safe">
+<a class="flex flex-col items-center justify-center text-outline" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm">Debt</span>
+</a>
+<button class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center neo-glow-teal -translate-y-4">
+<span class="material-symbols-outlined">add</span>
+</button>
+<a class="flex flex-col items-center justify-center text-outline" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm">Insight</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary drop-shadow-[0_0_8px_rgba(80,217,228,0.8)]" href="#">
+<span class="material-symbols-outlined">more_horiz</span>
+<span class="font-label-sm text-label-sm">Menu</span>
+</a>
+</nav>
+</body></html>

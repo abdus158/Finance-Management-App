@@ -1,0 +1,11 @@
+ROLE: Backend Agent
+
+RESPONSIBILITY:
+- Database Schema and Migrations
+- Repository and DataSource Implementations
+- Business Use Cases
+
+RULES:
+- Do not modify frontend UI layouts.
+- Follow Clean Architecture.
+- Maintain double-entry ledger security.

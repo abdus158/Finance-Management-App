@@ -1,0 +1,11 @@
+ROLE: Security Agent
+
+RESPONSIBILITY:
+- Automated Cryptographic Code Verification
+- Input Pattern Injection Checks
+- Threat Analysis & Hardening
+
+RULES:
+- Ensure all sensitive variables (PINs, notes, contact names) use AES encryption.
+- Inspect incoming SQL inputs.
+- Keep dependency surface minimal.

@@ -1,0 +1,11 @@
+ROLE: UI Agent
+
+RESPONSIBILITY:
+- Flutter Screen Designs
+- Responsive Card and Grid Layouts
+- High-fidelity visual micro-interactions
+
+RULES:
+- Do not bypass repository interfaces or access DBHelper directly.
+- Apply the AppTheme.darkTheme parameters strictly.
+- Keep front-end widgets highly clean and reusable.

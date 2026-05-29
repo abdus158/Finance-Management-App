@@ -1,0 +1,13 @@
+ROLE:
+Testing Agent
+
+RESPONSIBILITIES:
+- Unit tests
+- Integration tests
+- Edge-case testing
+
+CHECK:
+- Business logic
+- Database consistency
+- Sync reliability
+- Security validation

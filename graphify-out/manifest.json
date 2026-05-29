@@ -1,0 +1,2272 @@
+{
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.claude\\settings.json": {
+    "mtime": 1779027908.5867226,
+    "ast_hash": "5d6ecd96cf065b16e8bb9fbf5d7d8f0d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.codex\\hooks.json": {
+    "mtime": 1779027908.7527702,
+    "ast_hash": "5ebef3dd159986e465ab65e4014107ec",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.dart_tool\\package_config.json": {
+    "mtime": 1779056878.8063052,
+    "ast_hash": "aa27bb7d1a2d1fa9ba87ed51057a444d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.dart_tool\\package_graph.json": {
+    "mtime": 1779056878.8085454,
+    "ast_hash": "d7a1317075698a01d3e5805ed3932bae",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.dart_tool\\dartpad\\web_plugin_registrant.dart": {
+    "mtime": 1779529804.4282053,
+    "ast_hash": "7ed35bc85b7658d113371ffc24d07117",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\build.gradle.kts": {
+    "mtime": 1779056845.575054,
+    "ast_hash": "803fe22651fbe96ed401eb0b66a492d1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\gradlew": {
+    "mtime": 1779056848.4678824,
+    "ast_hash": "7f1cd7eb3f75a1dc85cd37753972a6e2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\settings.gradle.kts": {
+    "mtime": 1779056846.0858853,
+    "ast_hash": "f276a44edd917afd836899357fdae60e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\build.gradle.kts": {
+    "mtime": 1779056845.498714,
+    "ast_hash": "6de47c22eac0cf460866f98789a8eb99",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\java\\io\\flutter\\plugins\\GeneratedPluginRegistrant.java": {
+    "mtime": 1779529804.5519433,
+    "ast_hash": "7996295afd5b3700d466b5d636b80a19",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\kotlin\\com\\example\\fintrack_app\\MainActivity.kt": {
+    "mtime": 1779056845.5349712,
+    "ast_hash": "2f98a654e7700b34b8550d6b528903d6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\db_schema.sql": {
+    "mtime": 1779028354.8465967,
+    "ast_hash": "0b20dfb187f242ed5f23e04a027ee39a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\tasks.json": {
+    "mtime": 1779028378.2116036,
+    "ast_hash": "b46ed4340d09e6c263d62b6c197cb4be",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\fintrack_app\\lib\\main.dart": {
+    "mtime": 1779057003.3837936,
+    "ast_hash": "8051e077810d112d35f9633a97bec6c4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\fintrack_app\\lib\\core\\theme\\app_theme.dart": {
+    "mtime": 1779056992.016218,
+    "ast_hash": "b4f8155b6ad8a8729983f15d29566587",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graph\\system_graph.json": {
+    "mtime": 1779030006.412261,
+    "ast_hash": "b1821e0999d1db342138fd21f2a97613",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\analyze.py": {
+    "mtime": 1779024132.6159606,
+    "ast_hash": "a388b183bd17a94e56fa2a994fa2e09a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\benchmark.py": {
+    "mtime": 1779024132.6159606,
+    "ast_hash": "de9be35474ac206869586e78da8f8c1a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\build.py": {
+    "mtime": 1779024132.6202097,
+    "ast_hash": "55efa4b111f6a4d5606aa76c4fb582c3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\cache.py": {
+    "mtime": 1779024132.6230729,
+    "ast_hash": "b502a4b65d82c335732c5c982f3bf5ff",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\callflow_html.py": {
+    "mtime": 1779024132.6273208,
+    "ast_hash": "a7cb8231659767ad0035338b18a44da1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\cluster.py": {
+    "mtime": 1779024132.6280282,
+    "ast_hash": "6c0beeab6f894fa0c023cddae90a2800",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\dedup.py": {
+    "mtime": 1779024132.6313622,
+    "ast_hash": "735f93cf7ab38c61df8f3922e029b054",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\detect.py": {
+    "mtime": 1779024132.6331787,
+    "ast_hash": "50a38e92a5133f4de662fd6893de7371",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\export.py": {
+    "mtime": 1779024132.6378186,
+    "ast_hash": "18b0761fe19c77cb854cc1c1027af8f6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\extract.py": {
+    "mtime": 1779024132.6471932,
+    "ast_hash": "25c4f9d651a7f32557efddf34b61ee5c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\global_graph.py": {
+    "mtime": 1779024132.6485126,
+    "ast_hash": "26162123669cdc6311fe1cc7edf371b5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\google_workspace.py": {
+    "mtime": 1779024132.651091,
+    "ast_hash": "65f351d6eb1778feacaff4ea6fd2b2a1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\hooks.py": {
+    "mtime": 1779024132.6537445,
+    "ast_hash": "afcaadfe46ce4595a4a6f06aab5f341d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\ingest.py": {
+    "mtime": 1779024132.6558049,
+    "ast_hash": "c9688ebc354ea9a8b6b69448b8d67956",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\llm.py": {
+    "mtime": 1779024132.65992,
+    "ast_hash": "be06c3c293dc688bbb55f2268e59d862",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\manifest.py": {
+    "mtime": 1779024132.6618495,
+    "ast_hash": "b6fb195b7900f4ed7bec86a8b0d43a18",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\prs.py": {
+    "mtime": 1779024132.664174,
+    "ast_hash": "4aa0f209a25d07c5e394f26b30bc1cc2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\report.py": {
+    "mtime": 1779024132.6682298,
+    "ast_hash": "1bae1be0bbc5e28dcb98f12eff556b4e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\security.py": {
+    "mtime": 1779024132.6703076,
+    "ast_hash": "4a413809994067d9cb55b74fdd289e6e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\serve.py": {
+    "mtime": 1779024132.6730874,
+    "ast_hash": "e921061291783a5ec9f8a8ce1da1d65f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\transcribe.py": {
+    "mtime": 1779024132.7098625,
+    "ast_hash": "806ed4df8ffa36a40cc887a8b07e0c36",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\tree_html.py": {
+    "mtime": 1779024132.7131674,
+    "ast_hash": "7b89a14fd14e3387bdcd52b6a15b0038",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\validate.py": {
+    "mtime": 1779024132.7155426,
+    "ast_hash": "58b66d31350c480f602c1cb09648245d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\watch.py": {
+    "mtime": 1779024132.7161264,
+    "ast_hash": "1ef53521b48af9faebe63d0d88596b8b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\wiki.py": {
+    "mtime": 1779024132.7205105,
+    "ast_hash": "c071a9beb1e631a8e039280cc328054e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\__init__.py": {
+    "mtime": 1779024132.610258,
+    "ast_hash": "7d6b16eb66fd4852a50d7474a1815579",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\__main__.py": {
+    "mtime": 1779024132.614359,
+    "ast_hash": "00937b1140ba3ea437dba36a531a908c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\bench_extract.py": {
+    "mtime": 1779024132.7274475,
+    "ast_hash": "1a7d90e1abc6d7a780849ca3d5b3223e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_analyze.py": {
+    "mtime": 1779024132.8382356,
+    "ast_hash": "63aafd21c66901e3d5ff65bb03e3d928",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_astro_extraction.py": {
+    "mtime": 1779024132.841446,
+    "ast_hash": "d02c22e47b8032d135860c1da4bc97a5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_benchmark.py": {
+    "mtime": 1779024132.845315,
+    "ast_hash": "baffea6830942a6da25c1823a4bea424",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_build.py": {
+    "mtime": 1779024132.8483877,
+    "ast_hash": "bdb71928c34f7c0a3be27d059ea6b464",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_cache.py": {
+    "mtime": 1779024132.8518815,
+    "ast_hash": "2233754d22d5470b8a4b9dd0438b9e5a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_callflow_html.py": {
+    "mtime": 1779024132.8534753,
+    "ast_hash": "244b3cf5bc20b69a0db6f74ab4586195",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_charmap_encoding.py": {
+    "mtime": 1779024132.8555574,
+    "ast_hash": "6f944ec6836e2de9540ca3beba1d79b1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_chunking.py": {
+    "mtime": 1779024132.8555574,
+    "ast_hash": "29049c19d1d5fa98e8205d73481585c6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_claude_cli_backend.py": {
+    "mtime": 1779024132.859792,
+    "ast_hash": "69cc342c96ffa583f1fcd3c1687c4af3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_claude_md.py": {
+    "mtime": 1779024132.8601043,
+    "ast_hash": "b8fcdab59fac826310c473a1b2f861c1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_cli_export.py": {
+    "mtime": 1779024132.866373,
+    "ast_hash": "f22be96cba7f6293743e063106d9b8a6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_cluster.py": {
+    "mtime": 1779024132.8704274,
+    "ast_hash": "d809ac0e08a1a08344d4d479714afd9e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_confidence.py": {
+    "mtime": 1779024132.8704274,
+    "ast_hash": "aeaab1837c65fb85507e96621d1fa9e7",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_dedup.py": {
+    "mtime": 1779024132.8735895,
+    "ast_hash": "4554a8842570ce32ff65c7bb52a0cda0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_detect.py": {
+    "mtime": 1779024132.8735895,
+    "ast_hash": "3db63e48f85c058ab965f61b3fab8299",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_explain_cli.py": {
+    "mtime": 1779024132.8782308,
+    "ast_hash": "c2c86dec923b8fca336ced11b3a7dd11",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_export.py": {
+    "mtime": 1779024132.8818104,
+    "ast_hash": "f59ed5733ae316f309a051811d27130b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_extract.py": {
+    "mtime": 1779024132.8847425,
+    "ast_hash": "ed63958c5190f1764f2a3f81256872e5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_global_graph.py": {
+    "mtime": 1779024132.8862712,
+    "ast_hash": "6fdfe804a4fdc06aa9130dd7d925bcbd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_google_workspace.py": {
+    "mtime": 1779024132.888346,
+    "ast_hash": "af8a234affff192d1d3f7af2c6bc4245",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_hooks.py": {
+    "mtime": 1779024132.8909302,
+    "ast_hash": "ff9765f0078ecc8c9e8a9284255cc669",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_hypergraph.py": {
+    "mtime": 1779024132.893256,
+    "ast_hash": "1256cad0b03866e952d14314edd08116",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_import_extension_resolution.py": {
+    "mtime": 1779024132.894314,
+    "ast_hash": "d37c11d3cdfc282dcd96546cf6706f39",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_incremental.py": {
+    "mtime": 1779024132.8967617,
+    "ast_hash": "1d4989a9713b39532efe44a0111e7c96",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_ingest.py": {
+    "mtime": 1779024132.8993683,
+    "ast_hash": "887c3a601773a11f6a3a119c2aa94067",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_install.py": {
+    "mtime": 1779024132.9035728,
+    "ast_hash": "5a0fba6fa534fffaa6044e913e6b72ce",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_install_strings.py": {
+    "mtime": 1779024132.9035728,
+    "ast_hash": "b7876de5ca9d5fb3277397b991f9aaa8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_install_upgrade.py": {
+    "mtime": 1779024132.9056385,
+    "ast_hash": "c5fcb2a61d395cb6246d05c4efdd0f23",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_languages.py": {
+    "mtime": 1779024132.9056385,
+    "ast_hash": "e8c6a29445740fa8455ab89a6a1d402a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_llm_backends.py": {
+    "mtime": 1779024132.9100783,
+    "ast_hash": "3c9101b2a9f19e78adf37aff8c935049",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_multilang.py": {
+    "mtime": 1779024132.9119153,
+    "ast_hash": "7e522730600cc01aedf3ecf05b37cc27",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_ollama.py": {
+    "mtime": 1779024132.9132602,
+    "ast_hash": "e656280553f32f61207d8babbe28b31a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_pascal.py": {
+    "mtime": 1779024132.9159684,
+    "ast_hash": "10386495508870fd8705f9d7c502dd79",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_path_cli.py": {
+    "mtime": 1779024132.9159684,
+    "ast_hash": "8de169afa6645a8afeb647764e663b07",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_pipeline.py": {
+    "mtime": 1779024132.9203768,
+    "ast_hash": "7fd37b8566d77fd4127081245f605e7d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_prs.py": {
+    "mtime": 1779024132.9234476,
+    "ast_hash": "38e16aa0e8ca28267daecda50259ed7e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_query_cli.py": {
+    "mtime": 1779024132.9234476,
+    "ast_hash": "bc551c6d83285973c4294dbdbd7b966d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_rationale.py": {
+    "mtime": 1779024132.9234476,
+    "ast_hash": "db88c75c8a90d45ff2585da4bc0c7a6e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_report.py": {
+    "mtime": 1779024132.9282367,
+    "ast_hash": "c30892057a259583592cb99291c7e424",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_security.py": {
+    "mtime": 1779024132.9328065,
+    "ast_hash": "64d4de68f085220c6b6287610f4e5777",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_semantic_similarity.py": {
+    "mtime": 1779024132.9333427,
+    "ast_hash": "8b6da033b8d5c2e759b10162e507acd3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_serve.py": {
+    "mtime": 1779024132.9359343,
+    "ast_hash": "734baeaf648fe6069ce8ef0cc0e87619",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_transcribe.py": {
+    "mtime": 1779024132.9380116,
+    "ast_hash": "4f93c061f990991830203ce129291dd0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_validate.py": {
+    "mtime": 1779024132.9411428,
+    "ast_hash": "40f7c94d777ba791d6711ca7ad6444b1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_watch.py": {
+    "mtime": 1779024132.9428523,
+    "ast_hash": "7191437b937f6143d4679e97f2f154c0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\test_wiki.py": {
+    "mtime": 1779024132.944143,
+    "ast_hash": "4bff6934bc13e4d3e52c00e2b7f337e9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\__init__.py": {
+    "mtime": 1779024132.7274475,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\cjs_require.js": {
+    "mtime": 1779024132.730512,
+    "ast_hash": "7e96267e28c319393a69533179675d75",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\dynamic_import.ts": {
+    "mtime": 1779024132.746729,
+    "ast_hash": "3c8854b41bfd47798987f3a982fdb73e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\extraction.json": {
+    "mtime": 1779024132.7484193,
+    "ast_hash": "8c7e53bb3a5d646b25bc1c3d0a39aa36",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.c": {
+    "mtime": 1779024132.7598078,
+    "ast_hash": "576c1baf1268255813afcee65d95d625",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.cpp": {
+    "mtime": 1779024132.7598078,
+    "ast_hash": "acdb94344746d663c1703d3039e18dd5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.cs": {
+    "mtime": 1779024132.7634985,
+    "ast_hash": "f55760ad01c6837fd70c3fd3127e52b1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.dfm": {
+    "mtime": 1779024132.7672355,
+    "ast_hash": "43678d74d251a625bdaf3adb71572a9b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.ex": {
+    "mtime": 1779024132.7686405,
+    "ast_hash": "d5edac0c474cea2d4ea70646f010e6f8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.f90": {
+    "mtime": 1779024132.7705257,
+    "ast_hash": "b4ba1e911a8d6e6eb334b28e4fa6d66a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.go": {
+    "mtime": 1779024132.7731571,
+    "ast_hash": "68d764f267d6de33e0072e51b46984fd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.groovy": {
+    "mtime": 1779024132.7731571,
+    "ast_hash": "930d531632bec334756dbc1ecffd5607",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.java": {
+    "mtime": 1779024132.7731571,
+    "ast_hash": "b212881676b2bc38a9bd1ce24e5aecab",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.jl": {
+    "mtime": 1779024132.7772982,
+    "ast_hash": "05bf69b153b47ea73964930b374d12ae",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.json": {
+    "mtime": 1779024132.779859,
+    "ast_hash": "2f1e923bc3ed58c55233e963dc6045b4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.kt": {
+    "mtime": 1779024132.7817175,
+    "ast_hash": "e42eb24a6f09aded02c0ae1cd611c476",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.lfm": {
+    "mtime": 1779024132.7832456,
+    "ast_hash": "1ec315f44a5ab09c06df3a8e97333ec3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.lpk": {
+    "mtime": 1779024132.7832456,
+    "ast_hash": "bd451cd8938c8149ac85ca96df47a649",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.luau": {
+    "mtime": 1779024132.785913,
+    "ast_hash": "0371e4839c69f9e6e4bd6648c4658c30",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.m": {
+    "mtime": 1779024132.785913,
+    "ast_hash": "c5f2fc141ac551aa2b005874ef90fadb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.pas": {
+    "mtime": 1779024132.7911377,
+    "ast_hash": "d4192e62625d914c2fcddbdf47c0b720",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.php": {
+    "mtime": 1779024132.7929182,
+    "ast_hash": "fdde93cc61eb3a06c278942c289b61ed",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.ps1": {
+    "mtime": 1779024132.7944915,
+    "ast_hash": "f490c05808fe7a2405d59746deff79a8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.py": {
+    "mtime": 1779024132.7962759,
+    "ast_hash": "40d26857f9db668c666b9fd6e89cae0f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.rb": {
+    "mtime": 1779024132.8008847,
+    "ast_hash": "bc67e4db7dcea4169441db46e4c0d1b2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.rs": {
+    "mtime": 1779024132.8024793,
+    "ast_hash": "df2e677c4a4fb3ff16f25d01e8ece881",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.scala": {
+    "mtime": 1779024132.8056695,
+    "ast_hash": "49e434e95d052ffed3d41a76fc090697",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.sh": {
+    "mtime": 1779024132.8056695,
+    "ast_hash": "70f9f27e90d6329a180bb154808e64c5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.sql": {
+    "mtime": 1779024132.8056695,
+    "ast_hash": "edcd04dd6a02eb350ac8f8c2bc42c3b1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.swift": {
+    "mtime": 1779024132.8103392,
+    "ast_hash": "404ffe894f2b37ccc94a518a5aa5b52e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.ts": {
+    "mtime": 1779024132.8121786,
+    "ast_hash": "eca8672c41e03530fc355526545c425e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.tsx": {
+    "mtime": 1779024132.815526,
+    "ast_hash": "cc4c55319bb09b4bcb9137d52ad8d16c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.zig": {
+    "mtime": 1779024132.8161218,
+    "ast_hash": "2b70ac0b9a1698a539c3a0413369a7ba",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_alter_fk.sql": {
+    "mtime": 1779024132.8161218,
+    "ast_hash": "3ef2846871ce9629d644790cfce469fa",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_calls.py": {
+    "mtime": 1779024132.8200495,
+    "ast_hash": "5d61d0c3268393efdff61e775d0299dc",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_php_config.php": {
+    "mtime": 1779024132.8200495,
+    "ast_hash": "ec8acdd57e6c48be2208c8adb68ec9fb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_php_container.php": {
+    "mtime": 1779024132.8200495,
+    "ast_hash": "53f59426adc01aad42273a91b9c5d682",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_php_listen.php": {
+    "mtime": 1779024132.8233058,
+    "ast_hash": "ee3ff06e804e168123f8426894527195",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_php_static_prop.php": {
+    "mtime": 1779024132.8233058,
+    "ast_hash": "73b53ddaa4e0b43f9868a14f57e41ff7",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_preprocessed.F90": {
+    "mtime": 1779024132.8282673,
+    "ast_hash": "119a61bd69d8c4162b8f92634f78e3f1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_schema_qualified.sql": {
+    "mtime": 1779024132.830676,
+    "ast_hash": "790a536e9a3979fe42fb0ced05550da4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_spock.groovy": {
+    "mtime": 1779024132.8330643,
+    "ast_hash": "1a8cc277ce07523862b09afecdd932e1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample_tsconfig.json": {
+    "mtime": 1779024132.8350945,
+    "ast_hash": "4627aa7f3e9c66e1fccfc2d431608dca",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\typescript_advanced.ts": {
+    "mtime": 1779024132.8361368,
+    "ast_hash": "1c8c7caaa22b89dc2ae46a98bf1ec2c4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\crate_a\\src\\lib.rs": {
+    "mtime": 1779024132.735804,
+    "ast_hash": "71e83aadad3ab78b3aa3d0258dce72cd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\crate_b\\src\\lib.rs": {
+    "mtime": 1779024132.7426343,
+    "ast_hash": "3fb1a6373bffeec6b3f46e1c5a3e8254",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\api.py": {
+    "mtime": 1779024132.953583,
+    "ast_hash": "94803866dac5d43ca93424600f92d087",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\parser.py": {
+    "mtime": 1779024132.9600258,
+    "ast_hash": "7e851d6c9387d9dfe3d950da8134e907",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\processor.py": {
+    "mtime": 1779024132.9664998,
+    "ast_hash": "039460bdd76c82646b92300559d85c8b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\storage.py": {
+    "mtime": 1779024132.9685247,
+    "ast_hash": "51d7ae51c2822415aa561d6b5c2d21eb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\validator.py": {
+    "mtime": 1779024132.9705584,
+    "ast_hash": "0a1d1764da88dd249b9234f2fed8a4c8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\graph.json": {
+    "mtime": 1779024132.9797547,
+    "ast_hash": "57028339d42b045597a86010f8512f0e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\raw\\auth.py": {
+    "mtime": 1779024132.9835055,
+    "ast_hash": "f5e54f028db29f5ade3137e89f11e2e9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\raw\\client.py": {
+    "mtime": 1779024132.9861188,
+    "ast_hash": "cb2d79a9a63444bd67eac05d9180eee6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\raw\\exceptions.py": {
+    "mtime": 1779024132.9864423,
+    "ast_hash": "5cbe3454de1c02efd39d6ed626891664",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\raw\\models.py": {
+    "mtime": 1779024132.988469,
+    "ast_hash": "8bd8f9e42930dfdd3f11236ea96dd30c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\raw\\transport.py": {
+    "mtime": 1779024132.991889,
+    "ast_hash": "44ad90c1522cf5a4cdcc204a823d4b38",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\raw\\utils.py": {
+    "mtime": 1779024132.9945693,
+    "ast_hash": "396942df3d2ce6762c3d65014d0bbe19",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\karpathy-repos\\graph.json": {
+    "mtime": 1779024133.009933,
+    "ast_hash": "d6e2e2e97fb336673317351d3cfb1463",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\graph.json": {
+    "mtime": 1779024133.0276015,
+    "ast_hash": "3472483d969211d3e481a003d71c70a9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\raw\\analyze.py": {
+    "mtime": 1779024133.038485,
+    "ast_hash": "ab646c14d0bd6ade6453e830d366760c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\raw\\build.py": {
+    "mtime": 1779024133.046291,
+    "ast_hash": "5473722d759c4cde9072c2612c1c0a9e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\raw\\cluster.py": {
+    "mtime": 1779024133.049176,
+    "ast_hash": "cb21fb4b090dc4b6067a9235ee1278cb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\rsl-siege-manager\\graph.json": {
+    "mtime": 1779024133.0857093,
+    "ast_hash": "7609658567425751e750d0f3007e0a2a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\rsl-siege-manager\\manifest.json": {
+    "mtime": 1779024133.0877633,
+    "ast_hash": "1713c4ede148cc142e79c786e8d11ec4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Flutter\\flutter_export_environment.sh": {
+    "mtime": 1779529804.2945702,
+    "ast_hash": "c5e1b0ad00b78324d0b09cf5033d983c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Flutter\\ephemeral\\flutter_lldb_helper.py": {
+    "mtime": 1779529804.2834334,
+    "ast_hash": "98fc75412162af387e2e3461e4e58094",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\AppDelegate.swift": {
+    "mtime": 1779055449.2865071,
+    "ast_hash": "9e1de9c329a3fe4931876063de95132b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\GeneratedPluginRegistrant.h": {
+    "mtime": 1779529804.5933359,
+    "ast_hash": "decb9041b5e91a07e66f4664e5dac408",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\GeneratedPluginRegistrant.m": {
+    "mtime": 1779529804.5996356,
+    "ast_hash": "90d25935ec60ca1bf11e87fbd0de2a79",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Runner-Bridging-Header.h": {
+    "mtime": 1779055449.3408551,
+    "ast_hash": "7ad7b5cea096132de13ba526b2b9efbe",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\SceneDelegate.swift": {
+    "mtime": 1779055449.3442805,
+    "ast_hash": "0c3e86af131f6a9e547c80b5ed058914",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Contents.json": {
+    "mtime": 1779055449.2916458,
+    "ast_hash": "31a08e429403e265cabfb31b3d65f049",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\Contents.json": {
+    "mtime": 1779055449.3223765,
+    "ast_hash": "b9e927ac17345f2d5f052fe68a3487f9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\RunnerTests\\RunnerTests.swift": {
+    "mtime": 1779056846.824151,
+    "ast_hash": "24e5d095048eb86c30423f4e04b6e57b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\main.dart": {
+    "mtime": 1779029779.5328496,
+    "ast_hash": "98d9cf5ea84557629ed0d3ea258f717c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\app\\app.dart": {
+    "mtime": 1779545256.6710575,
+    "ast_hash": "efcbcd58792e2af11966c705362e5520",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\app\\routes.dart": {
+    "mtime": 1779545250.3010817,
+    "ast_hash": "05e4451365705f20f69011e2a2cd602d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\app\\theme.dart": {
+    "mtime": 1779526712.4578419,
+    "ast_hash": "18e76db79cf51b8f8eef2a53f91ed629",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\core\\database\\db_helper.dart": {
+    "mtime": 1779029298.161295,
+    "ast_hash": "06bb4bb28e8ce34c197a3df891e47124",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\core\\security\\secure_repository.dart": {
+    "mtime": 1779029274.891674,
+    "ast_hash": "3231cc1610cbc93e104767af4563b4ff",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\core\\security\\security_helper.dart": {
+    "mtime": 1779029226.6213074,
+    "ast_hash": "cc3d5cd37fa11dd0e1dd55c2a8c36ba6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\core\\theme\\app_theme.dart": {
+    "mtime": 1779545222.3542273,
+    "ast_hash": "e845d5c09e8f656f78bd4760fd6dd75c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\core\\theme\\glass_panel.dart": {
+    "mtime": 1779529070.1986797,
+    "ast_hash": "031882f53131c8505e647d93b8e63b99",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\main_navigation.dart": {
+    "mtime": 1779545306.0357366,
+    "ast_hash": "b13c60ee721fed00319dfa590cbaed9b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\dashboard\\dashboard_screen.dart": {
+    "mtime": 1779023792.557069,
+    "ast_hash": "971fcf944a362356405551022a160d28",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\ledger\\ledger_screen.dart": {
+    "mtime": 1779545297.2747157,
+    "ast_hash": "e3b47c75f97ae7297f5a5d840a26527e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\loans\\loans_screen.dart": {
+    "mtime": 1779023822.9398174,
+    "ast_hash": "5a9dc02b2c8be5779ef8fa95eb3bda5e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\security\\security_lock_screen.dart": {
+    "mtime": 1779545244.1522098,
+    "ast_hash": "de58a3147bc989667c9075d2f6a2c7d5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\trends\\trends_screen.dart": {
+    "mtime": 1779545283.5094528,
+    "ast_hash": "88e8f518ce20a9f34b71d7e559b34dcf",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\features\\wallets\\wallets_screen.dart": {
+    "mtime": 1779023811.9285645,
+    "ast_hash": "0a6f64c18dfd7d1f064fffc4eda078f5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\models\\loan.dart": {
+    "mtime": 1779023754.9943943,
+    "ast_hash": "fd92dc8e48abfd54c5ff04bb0ae1c87c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\models\\transaction.dart": {
+    "mtime": 1779023748.063738,
+    "ast_hash": "9fda41e74062ace6dcdcbb0115ad8a2b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\models\\wallet.dart": {
+    "mtime": 1779023741.1438322,
+    "ast_hash": "8b13fef45e8b461c23f76bd8b4f38515",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\dashboard\\presentation\\screens\\dashboard_screen.dart": {
+    "mtime": 1779532717.837449,
+    "ast_hash": "5e1af0ad03c8ceed66f4b68c9b57827b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\data\\datasources\\ledger_local_datasource.dart": {
+    "mtime": 1779029419.799463,
+    "ast_hash": "50623d4479b2d7c84a8bf02ba689b6fa",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\data\\models\\transaction_model.dart": {
+    "mtime": 1779029383.8996065,
+    "ast_hash": "0a4f2ec4fb9def95582526d870e59a9b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\data\\repositories_impl\\transaction_repository_impl.dart": {
+    "mtime": 1779029429.6053183,
+    "ast_hash": "e2ab69deb2400a5709fbd917dd508c6b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\domain\\entities\\transaction_entity.dart": {
+    "mtime": 1779029374.5166013,
+    "ast_hash": "26d8ab4171288e8301d810f18079a162",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\domain\\repositories\\transaction_repository.dart": {
+    "mtime": 1779029393.4141972,
+    "ast_hash": "d9c26da74c4369928b11109637009746",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\domain\\usecases\\add_transaction.dart": {
+    "mtime": 1779029402.0566893,
+    "ast_hash": "fa4e28d9205c6796568a4d013b5bf9b7",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\domain\\usecases\\get_transactions.dart": {
+    "mtime": 1779029410.5462554,
+    "ast_hash": "0d8894ecc1cd013fb6e4121357935e95",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\presentation\\screens\\ledger_screen.dart": {
+    "mtime": 1779529112.1567743,
+    "ast_hash": "15b1b239ff1d18f4b82e978381d01d8f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\ledger\\presentation\\state\\ledger_state.dart": {
+    "mtime": 1779029558.11569,
+    "ast_hash": "dd5d95607cc9ac66a1fb5e3d5e84c279",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\data\\datasources\\loan_local_datasource.dart": {
+    "mtime": 1779029710.198587,
+    "ast_hash": "6537b63d7b8356a4911dd73741d089df",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\data\\models\\loan_model.dart": {
+    "mtime": 1779029673.3344483,
+    "ast_hash": "2e2292b7813ad2cc1046eb0e163a3fd5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\data\\repositories_impl\\loan_repository_impl.dart": {
+    "mtime": 1779029719.4070508,
+    "ast_hash": "5636ef14804e298076c89b8f693ba404",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\domain\\entities\\loan_entity.dart": {
+    "mtime": 1779029664.1939929,
+    "ast_hash": "5d67c0afd4c47bcdf668fca3027fb90c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\domain\\repositories\\loan_repository.dart": {
+    "mtime": 1779029682.388459,
+    "ast_hash": "725303d9963e17798a46e8ed46b20cd1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\domain\\usecases\\get_loans.dart": {
+    "mtime": 1779029692.1548777,
+    "ast_hash": "6531337b55b28a0ee920ccb06cb96e2f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\domain\\usecases\\pay_installment.dart": {
+    "mtime": 1779029700.8267999,
+    "ast_hash": "7e579227149666a1d27699c990955dbc",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\presentation\\screens\\loans_screen.dart": {
+    "mtime": 1779029741.747351,
+    "ast_hash": "a67eef075f4163365dbedb41baddb3a8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\loans\\presentation\\state\\loan_state.dart": {
+    "mtime": 1779029729.4632008,
+    "ast_hash": "a4dcb9a052f6d27aa3e9f68326aabf66",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\data\\datasources\\wallet_local_datasource.dart": {
+    "mtime": 1779029624.3889618,
+    "ast_hash": "c0d4d466aaf656da685e1d5149adb7fd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\data\\models\\wallet_model.dart": {
+    "mtime": 1779029588.0103002,
+    "ast_hash": "432fbba478bfb176b446d41bec5eeb73",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\data\\repositories_impl\\wallet_repository_impl.dart": {
+    "mtime": 1779029633.742522,
+    "ast_hash": "454449a7b8910c77a0ef5b3449d4897d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\domain\\entities\\wallet_entity.dart": {
+    "mtime": 1779029579.099604,
+    "ast_hash": "7e7f06724ffa3071904cfa80cbc1dcbf",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\domain\\repositories\\wallet_repository.dart": {
+    "mtime": 1779029596.7859108,
+    "ast_hash": "caae52e676a015e2370d67ae85bd550d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\domain\\usecases\\get_wallets.dart": {
+    "mtime": 1779029606.0606196,
+    "ast_hash": "f978740c208fb372d2faa79be5fcddcb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\domain\\usecases\\transfer_funds.dart": {
+    "mtime": 1779029615.0033672,
+    "ast_hash": "bef7da7e2989dc37ed6f7bb751ee4851",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\presentation\\screens\\wallets_screen.dart": {
+    "mtime": 1779029655.0029595,
+    "ast_hash": "29b586778c8fc6b4b913da801866e9ed",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\modules\\wallet\\presentation\\state\\wallet_state.dart": {
+    "mtime": 1779029642.9544275,
+    "ast_hash": "d9d81144fea6e25b3d47a7b4339a8ece",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\lib\\providers\\fcc_provider.dart": {
+    "mtime": 1779545314.5637577,
+    "ast_hash": "d0b3a3f8787ba112de8f56c328500aaa",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\flutter\\generated_plugin_registrant.cc": {
+    "mtime": 1779529804.5605042,
+    "ast_hash": "d07afe003d5837167bdd357d593f20a0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\flutter\\generated_plugin_registrant.h": {
+    "mtime": 1779529804.5579464,
+    "ast_hash": "d295462c9da9f7fef22dc86c34492318",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\runner\\main.cc": {
+    "mtime": 1779055449.3725061,
+    "ast_hash": "539395bcd63dba20afed0838d136189f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\runner\\my_application.cc": {
+    "mtime": 1779056847.0203862,
+    "ast_hash": "06036f9048d58d6d464d4b7f8fe8290c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\runner\\my_application.h": {
+    "mtime": 1779055449.3808298,
+    "ast_hash": "ffa1a7c0a2ad45a2c14a921596516ff8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Flutter\\GeneratedPluginRegistrant.swift": {
+    "mtime": 1779529804.605487,
+    "ast_hash": "cb0b32846102b28aa96223e4cbb772a3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Flutter\\ephemeral\\flutter_export_environment.sh": {
+    "mtime": 1779529804.3036716,
+    "ast_hash": "719820e260442f8f34327f0f05aa310a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\AppDelegate.swift": {
+    "mtime": 1779055449.4350505,
+    "ast_hash": "4b52e0b89ebfef9baf45b04548c463d6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\MainFlutterWindow.swift": {
+    "mtime": 1779055449.4733148,
+    "ast_hash": "93c22dae2d93f3dc1402e121901f582b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Contents.json": {
+    "mtime": 1779055449.4395013,
+    "ast_hash": "1d48e925145d4b573a3b5d7960a1c585",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\RunnerTests\\RunnerTests.swift": {
+    "mtime": 1779056847.6571195,
+    "ast_hash": "8059f5d27a19c556eeafb49b3f9b7bdd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\test\\widget_test.dart": {
+    "mtime": 1779545382.2868454,
+    "ast_hash": "cb3056c72029a37ed002c95dbfd14a87",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\manifest.json": {
+    "mtime": 1779056847.8847744,
+    "ast_hash": "c9be2e9ee05d61849b6bf3749f975c52",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\flutter\\generated_plugin_registrant.cc": {
+    "mtime": 1779529804.5852356,
+    "ast_hash": "0201f664e28c519aee2f830af063327c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\flutter\\generated_plugin_registrant.h": {
+    "mtime": 1779529804.5761027,
+    "ast_hash": "0ea33875f9f8e118f9c2ded03e2e2835",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\flutter_window.cpp": {
+    "mtime": 1779055449.528215,
+    "ast_hash": "2f463f9b7da67a2d692a012f9ea85e0c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\flutter_window.h": {
+    "mtime": 1779055449.530762,
+    "ast_hash": "7defcc89d4a26d56e801241d624d48fb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\main.cpp": {
+    "mtime": 1779056848.1250374,
+    "ast_hash": "54b88ad1c1d04f1d17b8eeb73139e0b2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\resource.h": {
+    "mtime": 1779055449.5369055,
+    "ast_hash": "1ade5dd15e613479a15e8832ed276f2b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\utils.cpp": {
+    "mtime": 1779055449.5438688,
+    "ast_hash": "432461b09d862a2f8dadf380ff0e34e5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\utils.h": {
+    "mtime": 1779055449.546111,
+    "ast_hash": "fd81e143f5614eb6fd75efe539002853",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\win32_window.cpp": {
+    "mtime": 1779055449.547151,
+    "ast_hash": "571eb8234dbc2661be03aa5f2a4d2fca",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\win32_window.h": {
+    "mtime": 1779055449.5490727,
+    "ast_hash": "7569387d58711ab975940f4df3b4bcda",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\AGENTS.md": {
+    "mtime": 1779027908.7439725,
+    "ast_hash": "d2a3742fbd1b791ccd787f6f27fcda87",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\analysis_options.yaml": {
+    "mtime": 1779056845.4548514,
+    "ast_hash": "9e65f4b9beebb674c0dc252f70a5c177",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\CLAUDE.md": {
+    "mtime": 1779027908.5867226,
+    "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\DESIGN.md": {
+    "mtime": 1779054691.3253708,
+    "ast_hash": "736ba58770064c5848ae27ec9d4393f3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\pubspec.yaml": {
+    "mtime": 1779029212.684732,
+    "ast_hash": "3cc8c4ee7f2cdd56ebcc0c48ea765d20",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\README.md": {
+    "mtime": 1779056847.7135816,
+    "ast_hash": "d01ab7027729062d1a4bdf255d9dd941",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.agents\\rules\\graphify.md": {
+    "mtime": 1779024180.903675,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\.agents\\workflows\\graphify.md": {
+    "mtime": 1779024180.9057624,
+    "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\agent_constraints.md": {
+    "mtime": 1779028811.3571396,
+    "ast_hash": "a9fb1e57b96ac05bcfa6329c60414bbd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\agent_prompt_template.txt": {
+    "mtime": 1779029988.2931273,
+    "ast_hash": "4e4bf96a15f4610e4571f65297a64a07",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\agent_roles.md": {
+    "mtime": 1779028390.040754,
+    "ast_hash": "f03b05c881425600bf2e969fb49ccd3f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\backend_agent.txt": {
+    "mtime": 1779029992.6124382,
+    "ast_hash": "1fd4f0ac0f53dc4fda8e63f4a0fd75d3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\flutter_architect_agent.txt": {
+    "mtime": 1779534153.3753793,
+    "ast_hash": "d3146c1d3d4599874d344df2d3dbeb58",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\master_execution_prompt.txt": {
+    "mtime": 1779534177.4275284,
+    "ast_hash": "f8eb18ac8355e6541aca5043511af638",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\security_agent.txt": {
+    "mtime": 1779030001.9084134,
+    "ast_hash": "01f3b3930b786dd537b217662c000cdd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\sync_engine_agent.txt": {
+    "mtime": 1779534158.0676684,
+    "ast_hash": "1f198572f6bd1e3af43191bb9a662ea0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\testing_agent.txt": {
+    "mtime": 1779534162.6207447,
+    "ast_hash": "12da30c14e68dd869f6e9e6ce699c02e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\agents\\ui_agent.txt": {
+    "mtime": 1779029997.3952677,
+    "ast_hash": "0ddae3c4ef82fcc58d5ef9a9654eb751",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\agent_rules.md": {
+    "mtime": 1779029983.6302886,
+    "ast_hash": "5c924fe284c070f5dff5c8d4aaa00eff",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\architecture.md": {
+    "mtime": 1779028343.1757078,
+    "ast_hash": "29a8a1d96690d5a2e55dfa8b5298bbf6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\code_review_checklist.md": {
+    "mtime": 1779534188.343257,
+    "ast_hash": "60d5d1ec80d643dc4e55cda721e5a959",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\database_design.md": {
+    "mtime": 1779534120.6666338,
+    "ast_hash": "a94472fd0f4d6a60a8455db09e840412",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\decisions_log.md": {
+    "mtime": 1779028367.2383165,
+    "ast_hash": "0dc3873f0d9699dce016a9522f3a5c4a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\dependency_policy.md": {
+    "mtime": 1779534182.9530692,
+    "ast_hash": "854271ba6eeeda85d1be8ddf99653250",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\design_system.md": {
+    "mtime": 1779534139.7283945,
+    "ast_hash": "613698f975bc56ac0c28336607a0b14a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\error_handling.md": {
+    "mtime": 1779534199.8089495,
+    "ast_hash": "086f236023db0c01bd7dff38d6268a2d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\feature_roadmap.md": {
+    "mtime": 1779534144.3905222,
+    "ast_hash": "fc3fa8f77a18c39fff5154e695fab62d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\future_scalability.md": {
+    "mtime": 1779534172.870107,
+    "ast_hash": "72d8e6b1ba9b9c5d43fc88221140cc03",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\godfather_masterplan.md": {
+    "mtime": 1779028977.2172203,
+    "ast_hash": "0d7c227337bdab671dccd28df3974c47",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\migration_strategy.md": {
+    "mtime": 1779534193.5416634,
+    "ast_hash": "bd77ccdbbfd57613d2921141a1906d2f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\performance_guidelines.md": {
+    "mtime": 1779534148.9745777,
+    "ast_hash": "e56e527fa9a055ed70dda8dd71c5b2b4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\release_checklist.md": {
+    "mtime": 1779534168.2531917,
+    "ast_hash": "8983be5c5bccbea3fcc946e06a8e421b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\requirements.md": {
+    "mtime": 1779028330.5133624,
+    "ast_hash": "4a44ed7b67bcaeb43d9be45b425aa88d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\security.md": {
+    "mtime": 1779029978.6853387,
+    "ast_hash": "b049af82f2527817f40ef2297b1cf0f4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\security_checklist.md": {
+    "mtime": 1779028823.6174164,
+    "ast_hash": "897725aaa46e7e00687a4e8a384b5fe9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\security_hardening.md": {
+    "mtime": 1779534130.1573844,
+    "ast_hash": "8e168d85b7c8edd7e6a782778ca440ec",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\state_management.md": {
+    "mtime": 1779534116.10285,
+    "ast_hash": "2588e3a1c982e6c89cd1204c62348b8b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\sync_engine.md": {
+    "mtime": 1779534125.5320017,
+    "ast_hash": "ea8f03835bf7084c113942a72afcf6c1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\testing_strategy.md": {
+    "mtime": 1779534135.0852187,
+    "ast_hash": "f480acc6e97d397ff4730da02e39601c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\threat_model.md": {
+    "mtime": 1779028836.731246,
+    "ast_hash": "535af9ac7713c36b86dd4ad37f94027c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\vision.md": {
+    "mtime": 1779028316.336694,
+    "ast_hash": "455895781ec94abf2d63d4c3706efe0f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Add_Transaction_0da98b3d886340e495f4ef937067b043.html": {
+    "mtime": 1779526744.8194804,
+    "ast_hash": "4836c2387099bf83b5eaea91d460888e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Add_Transaction_5ba99bd660744fe6bd012983d000c13e.html": {
+    "mtime": 1779526747.356418,
+    "ast_hash": "0ef2aa65496bd61b7b49329fd58db6da",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Add_Transaction_adf7bb2e05f14513850f714766bc5f9a.html": {
+    "mtime": 1779526746.2095003,
+    "ast_hash": "0ef2aa65496bd61b7b49329fd58db6da",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Cash_Forecast_2352fc65fffc4cb480baf9aed131dedb.html": {
+    "mtime": 1779526740.971888,
+    "ast_hash": "31c0c849818bc391625fbb889c04d8e1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Dashboard_5ac7dc3ffac143c8b434903b3bf3bb1d.html": {
+    "mtime": 1779526752.4497235,
+    "ast_hash": "da211b82986705d46a19137dd0ea720b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Dashboard_66a933b88a314f76a4abbf60d8060967.html": {
+    "mtime": 1779526747.9763014,
+    "ast_hash": "0604f81ac234aae3e27a79d4dc42018b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Dashboard_aff47ca8267045cda96a1138e57e4b57.html": {
+    "mtime": 1779526752.9951158,
+    "ast_hash": "be232c9378f25134022c50ebfa05b62a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Debt_Visualizer_627166819d81486c9fe0861f3757b9f7.html": {
+    "mtime": 1779526742.8306446,
+    "ast_hash": "de28804ea9284fd0d19aff21ee814d3e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Debt_Visualizer_c650349662c841bdb83b7fddee571250.html": {
+    "mtime": 1779526749.7307227,
+    "ast_hash": "315fa69d5ba248ad6f5f7a5efe2e2383",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Financial_Command_Center_722ec9d68c9c44f0ae2054d7ea5b2ec4.html": {
+    "mtime": 1779526741.8795826,
+    "ast_hash": "da211b82986705d46a19137dd0ea720b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Loans_1c70839a0879416ebecc98baddfc5924.html": {
+    "mtime": 1779526740.5114675,
+    "ast_hash": "a534c45bf5dcbfecc05e9c0c252ed178",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Loans_a38106babee7475b904b2f527ae0508d.html": {
+    "mtime": 1779526743.2550156,
+    "ast_hash": "8347ecf7994375b49ceb869f69cd0db5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Portfolio_Allocation_6eb7243facda4f228e3e80680f610e50.html": {
+    "mtime": 1779526740.0714133,
+    "ast_hash": "f9d28368b7b0faca4764a44570eaab60",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Predictive_Analytics_620519308cad4c8999042a3de39bc08f.html": {
+    "mtime": 1779526746.9000168,
+    "ast_hash": "40580d935627984eb7bee1e16826d77b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Predictive_Analytics_8ac25d8567a54522a1b5ed33e6744ac4.html": {
+    "mtime": 1779526743.680306,
+    "ast_hash": "bb46c254cf7120fff60707902ac7fc73",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Repayment_Simulator_7e8dede57eef47d4b0563a49ee2ba5f5.html": {
+    "mtime": 1779526744.2489746,
+    "ast_hash": "175c03a9994dcb11d9c417aad0e295b0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Settings_and_Security_b4a5941b79554acdb98815c029e2c174.html": {
+    "mtime": 1779526742.3601582,
+    "ast_hash": "9c73705341a3f68d7e85ede7022f6a41",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Smart_Input_44e4198ed60349779b48e86a7d9456cf.html": {
+    "mtime": 1779526751.0368557,
+    "ast_hash": "58143f04a7161a9375b4d75547cce79c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Smart_Voice_Input_0b9c8356172d4fa2b497a8f5c038b4ba.html": {
+    "mtime": 1779526748.429929,
+    "ast_hash": "a0703abfe3217e163d927b1a99b3bf41",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Transaction_History_a7db94b6c38c4fe58d7e242f823ba386.html": {
+    "mtime": 1779526751.5997117,
+    "ast_hash": "9d7a6e386919bad7e1d148f6a1f7f4f1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Trends_3bbbc8c3c35a40c8b89aeba473766c7a.html": {
+    "mtime": 1779526745.2805662,
+    "ast_hash": "c83e24281f7ba0694f43df86e2b34ba8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Trends_801d6d6e6d8e428491e7507c4287707e.html": {
+    "mtime": 1779526750.4519355,
+    "ast_hash": "4ef7a422c09c2362839a1f8e67ee9042",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Unified_Dashboard_b15a793a2a55475c8ef4c3666f98b7e0.html": {
+    "mtime": 1779526745.7230935,
+    "ast_hash": "8cc1764478a0178f1828128270ce9086",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Wallets_0fa59ffb842d4adfa8e4eb115c574278.html": {
+    "mtime": 1779526753.4934,
+    "ast_hash": "071ad69a2d270d900d209ca8b6ab8f64",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Wallets_562a6e7af5c1424e969efd9d1a4a8d97.html": {
+    "mtime": 1779526749.2008986,
+    "ast_hash": "ce3eeef0595bb0d7549e9158ecec41dd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\brain\\designs\\Wallet_Transfer_caf33fa97d0e4d49931d3eb8c6392a62.html": {
+    "mtime": 1779526741.434466,
+    "ast_hash": "b7dc6736d3fee7914fc3c36755545e3e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\AGENTS.md": {
+    "mtime": 1779024132.4953225,
+    "ast_hash": "ab254d0a1c83f1f4813a79ddddbdf284",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\ARCHITECTURE.md": {
+    "mtime": 1779024132.4953225,
+    "ast_hash": "ba157b42ddab031711caa6bba6eef72e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\CHANGELOG.md": {
+    "mtime": 1779024132.5005481,
+    "ast_hash": "ac7de089f9eb921c62b8e24da2ba1259",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\README.md": {
+    "mtime": 1779024132.506902,
+    "ast_hash": "c0b30f2136f8a8b3255c64facf57a565",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\SECURITY.md": {
+    "mtime": 1779024132.5099494,
+    "ast_hash": "8cc42d0936db88514164fa88aa35ee37",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\.github\\FUNDING.yml": {
+    "mtime": 1779024132.4860954,
+    "ast_hash": "3026fc64a3b0c93415606cc9799356cd",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\.github\\workflows\\ci.yml": {
+    "mtime": 1779024132.4860954,
+    "ast_hash": "333335a604e197380afbe9382c2d5c1f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\docker-mcp-sqlite.md": {
+    "mtime": 1779024132.5162313,
+    "ast_hash": "f560062bc0fa9015e579083a3c6de462",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\how-it-works.md": {
+    "mtime": 1779024132.5199223,
+    "ast_hash": "a3fd0ccb5508eaad428b9586ab459afc",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\superpowers\\plans\\2026-05-04-incremental-updates-dedup.md": {
+    "mtime": 1779024132.5335534,
+    "ast_hash": "8f2e4bf83e61604829f985428bb51fe3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\superpowers\\specs\\2026-05-04-incremental-updates-dedup-design.md": {
+    "mtime": 1779024132.536241,
+    "ast_hash": "1e5a0a2f249d793a88a2c729679be698",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.ar-SA.md": {
+    "mtime": 1779024132.5413623,
+    "ast_hash": "21dee88d435f035aa8b5ac20365a5d42",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.cs-CZ.md": {
+    "mtime": 1779024132.542946,
+    "ast_hash": "9a352adc0f566a84536b4264f18cfb1c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.da-DK.md": {
+    "mtime": 1779024132.5477977,
+    "ast_hash": "b12b903f0e5e2f8f347c535042a8426e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.de-DE.md": {
+    "mtime": 1779024132.5516546,
+    "ast_hash": "496f2233f8409cf7189f30ca6eb4da0f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.el-GR.md": {
+    "mtime": 1779024132.5540607,
+    "ast_hash": "b46bd9efa7b586ad2737bfd0e841fd0c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.es-ES.md": {
+    "mtime": 1779024132.555686,
+    "ast_hash": "cb7c647e726c762c673de90ac3135b05",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.fi-FI.md": {
+    "mtime": 1779024132.555686,
+    "ast_hash": "fb07be821d7175af4d315bc951c1efe9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.fr-FR.md": {
+    "mtime": 1779024132.5598629,
+    "ast_hash": "2d4f43daef30bde2c1fc72725884a184",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.hi-IN.md": {
+    "mtime": 1779024132.5640123,
+    "ast_hash": "feda9705bf766f80162bfff7311c2f29",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.hu-HU.md": {
+    "mtime": 1779024132.5667257,
+    "ast_hash": "55b9cb2c207d244249dd1caebe2e5e45",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.id-ID.md": {
+    "mtime": 1779024132.5702488,
+    "ast_hash": "85e8584403716bad05394a0add760f93",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.it-IT.md": {
+    "mtime": 1779024132.5702488,
+    "ast_hash": "caecd57423f35f7539eaabe4d1319662",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.ja-JP.md": {
+    "mtime": 1779024132.5730739,
+    "ast_hash": "7fa0dce1445a4432b352633e07aedf54",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.ko-KR.md": {
+    "mtime": 1779024132.5769706,
+    "ast_hash": "88a4a59719dee4c9338d5bea39c33c8f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.nl-NL.md": {
+    "mtime": 1779024132.5774827,
+    "ast_hash": "68837abbcb701c80d9d3947bde1cac72",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.no-NO.md": {
+    "mtime": 1779024132.5774827,
+    "ast_hash": "1d428724eb3541ced336b31d841bcbe4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.pl-PL.md": {
+    "mtime": 1779024132.5814826,
+    "ast_hash": "e9870f9afdc4c6214549655abccd2255",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.pt-BR.md": {
+    "mtime": 1779024132.585961,
+    "ast_hash": "27b64dc0e34fe88e13d13e8cd8714caa",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.ro-RO.md": {
+    "mtime": 1779024132.5875542,
+    "ast_hash": "ae90ff6940a62ef6514e9d3d5385cd26",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.ru-RU.md": {
+    "mtime": 1779024132.5875542,
+    "ast_hash": "70ea1a4f8f81424937ec7d537c49881c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.sv-SE.md": {
+    "mtime": 1779024132.5928602,
+    "ast_hash": "bf5625414eb9c19780b79f99cba6201f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.th-TH.md": {
+    "mtime": 1779024132.5941281,
+    "ast_hash": "faee08ef1c36d5b3f20e311a24c84497",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.tr-TR.md": {
+    "mtime": 1779024132.59674,
+    "ast_hash": "b030515ddecdd2d3035deb8dcd94ab44",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.uk-UA.md": {
+    "mtime": 1779024132.6001246,
+    "ast_hash": "41013b232d2917a2a7380b8e8725fb5c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.vi-VN.md": {
+    "mtime": 1779024132.602759,
+    "ast_hash": "b7276048863b55d4e8e50881a25bcd6b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.zh-CN.md": {
+    "mtime": 1779024132.6039026,
+    "ast_hash": "d8c173e505a6c7bdef3136e8215dbdf0",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\translations\\README.zh-TW.md": {
+    "mtime": 1779024132.60596,
+    "ast_hash": "44fe44e290d5343df65bde35a88d2b3b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-aider.md": {
+    "mtime": 1779024132.6751525,
+    "ast_hash": "9df11bf8f5734ebd1a52bc7fb81fa26c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-claw.md": {
+    "mtime": 1779024132.677179,
+    "ast_hash": "66e1520d4a1a844d00d808712049ad89",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-codex.md": {
+    "mtime": 1779024132.6795282,
+    "ast_hash": "088eb6a43b7fafc5d9f9d0ff69646bc6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-copilot.md": {
+    "mtime": 1779024132.6825454,
+    "ast_hash": "506ef3fa743b1cccfd61f23d293de70c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-droid.md": {
+    "mtime": 1779024132.6858366,
+    "ast_hash": "3b16ece70115292973c08c6286662792",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-kiro.md": {
+    "mtime": 1779024132.6879008,
+    "ast_hash": "480a67b5396b80181f0a8d1189329032",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-opencode.md": {
+    "mtime": 1779024132.691855,
+    "ast_hash": "17a7c704e73dfa19eba9c7aa19e2b56c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-pi.md": {
+    "mtime": 1779024132.694197,
+    "ast_hash": "38b5db7e134ce4f2d18d7ffa59ea9da7",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-trae.md": {
+    "mtime": 1779024132.6993785,
+    "ast_hash": "32e99b2852b9b99e39026d3daec8d8ce",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-vscode.md": {
+    "mtime": 1779024132.7026038,
+    "ast_hash": "78b183a721ceea75030c659e6c4125b6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill-windows.md": {
+    "mtime": 1779024132.705743,
+    "ast_hash": "3a40ce5ebf5fa69f9d2890af85bdfc7e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\graphify\\skill.md": {
+    "mtime": 1779024132.7092977,
+    "ast_hash": "20e43d77b88183371507e1589db08b2a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\deploy_guide.md": {
+    "mtime": 1779024132.7441921,
+    "ast_hash": "4c9127679279842396174bef13f7937b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\tests\\fixtures\\sample.md": {
+    "mtime": 1779024132.785913,
+    "ast_hash": "e23659acdd71c13913857fceb1fabb48",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\README.md": {
+    "mtime": 1779024132.9509342,
+    "ast_hash": "0ad0e818e81e67221ca59bba8f61dedc",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\architecture.md": {
+    "mtime": 1779024132.9556575,
+    "ast_hash": "1201316b29aec5bf4ce130fd116ea910",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\example\\raw\\notes.md": {
+    "mtime": 1779024132.959448,
+    "ast_hash": "b34fb1280985d1a2a44baca60fa2debf",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\GRAPH_REPORT.md": {
+    "mtime": 1779024132.9738784,
+    "ast_hash": "a604a6da7f618b140193e923e5bc4f92",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\README.md": {
+    "mtime": 1779024132.9766676,
+    "ast_hash": "433f8494c1a0c308c5ef09f0a2c54f80",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\httpx\\review.md": {
+    "mtime": 1779024132.9995017,
+    "ast_hash": "02e23ebb29f068b23dcce29af3d368d8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\karpathy-repos\\GRAPH_REPORT.md": {
+    "mtime": 1779024133.0031562,
+    "ast_hash": "69d7498903d698e456f009958234917c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\karpathy-repos\\README.md": {
+    "mtime": 1779024133.005822,
+    "ast_hash": "b1cbbadc195601e545d3258ddb690553",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\karpathy-repos\\review.md": {
+    "mtime": 1779024133.0131578,
+    "ast_hash": "9697fe2ebd4458a2d4957220e6ae5a10",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\GRAPH_REPORT.md": {
+    "mtime": 1779024133.020218,
+    "ast_hash": "f5f230efee89ed874926d520edc12c66",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\README.md": {
+    "mtime": 1779024133.0233097,
+    "ast_hash": "34252f3bf7a5af70096da4ffa8d086ff",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\review.md": {
+    "mtime": 1779024133.052852,
+    "ast_hash": "485aa5f2c880fde1b8f5342401f6038a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\rsl-siege-manager\\graph.html": {
+    "mtime": 1779024133.0700545,
+    "ast_hash": "b6226c2e30e0ccfbc56b15297319fa65",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\rsl-siege-manager\\GRAPH_REPORT.md": {
+    "mtime": 1779024133.057577,
+    "ast_hash": "2c56ab55dda9d94cb5aab4e1a21a2cf1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\rsl-siege-manager\\README.md": {
+    "mtime": 1779024133.06011,
+    "ast_hash": "146efca4b05edc2b2d9d8c7c5e5f0646",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\rsl-siege-manager\\review.md": {
+    "mtime": 1779024133.0877633,
+    "ast_hash": "4c33f90ff920a38235861eb9fd75387e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\README.md": {
+    "mtime": 1779055449.3306494,
+    "ast_hash": "f7ee1b402881509d197f34963e569927",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\CMakeLists.txt": {
+    "mtime": 1779056846.8936203,
+    "ast_hash": "617524de131b8f8e2ad5c48d28f259fb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\flutter\\CMakeLists.txt": {
+    "mtime": 1779055449.3598742,
+    "ast_hash": "2195470ce31675d31db5a37590d011f6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\linux\\runner\\CMakeLists.txt": {
+    "mtime": 1779055449.3697755,
+    "ast_hash": "30cc1614b16214b66c014af09ba699eb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\index.html": {
+    "mtime": 1779056847.8599312,
+    "ast_hash": "754ab79e452184b1462d184acdc9088f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\CMakeLists.txt": {
+    "mtime": 1779056847.959948,
+    "ast_hash": "3e7160f16f70a5da59811a3d34fa176a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\flutter\\CMakeLists.txt": {
+    "mtime": 1779055449.5195992,
+    "ast_hash": "bbf66fed5180bd9ae8198b8d7c4a0001",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\windows\\runner\\CMakeLists.txt": {
+    "mtime": 1779055449.5229633,
+    "ast_hash": "028602ab9754bffe716659ada7590d29",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\worked\\mixed-corpus\\raw\\attention_notes.md": {
+    "mtime": 1779024133.0428846,
+    "ast_hash": "1d9910017f78af70ed111d74b5e3558d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png": {
+    "mtime": 1779055449.2060807,
+    "ast_hash": "13e9c72ec37fac220397aa819fa1ef2d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png": {
+    "mtime": 1779055449.210971,
+    "ast_hash": "6270344430679711b81476e29878caa7",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png": {
+    "mtime": 1779055449.215232,
+    "ast_hash": "a0a8db5985280b3679d99a820ae2db79",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png": {
+    "mtime": 1779055449.2192614,
+    "ast_hash": "afe1b655b9f32da22f9a4301bb8e6ba8",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png": {
+    "mtime": 1779055449.2229686,
+    "ast_hash": "57838d52c318faff743130c3fcfae0c6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\logo-icon.svg": {
+    "mtime": 1779024132.5199223,
+    "ast_hash": "7bfdde1f83bb3423470b408efabc2c52",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\graphify_repo\\docs\\logo-text.svg": {
+    "mtime": 1779024132.525878,
+    "ast_hash": "3a5c53971d1c5eca33d038201999dd68",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-1024x1024@1x.png": {
+    "mtime": 1779055676.2619195,
+    "ast_hash": "c785f8932297af4acd5f5ccb7630f01c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-20x20@1x.png": {
+    "mtime": 1779055676.368567,
+    "ast_hash": "a2f8558fb1d42514111fbbb19fb67314",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-20x20@2x.png": {
+    "mtime": 1779055676.1029005,
+    "ast_hash": "2247a840b6ee72b8a069208af170e5b1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-20x20@3x.png": {
+    "mtime": 1779055676.5032907,
+    "ast_hash": "1b3b1538136316263c7092951e923e9d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-29x29@1x.png": {
+    "mtime": 1779055676.8258219,
+    "ast_hash": "be8887071dd7ec39cb754d236aa9584f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-29x29@2x.png": {
+    "mtime": 1779055675.8124206,
+    "ast_hash": "043119ef4faa026ff82bd03f241e5338",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-29x29@3x.png": {
+    "mtime": 1779055676.442175,
+    "ast_hash": "2b1452c4c1bda6177b4fbbb832df217f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-40x40@1x.png": {
+    "mtime": 1779055675.8651707,
+    "ast_hash": "2247a840b6ee72b8a069208af170e5b1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-40x40@2x.png": {
+    "mtime": 1779055676.7543583,
+    "ast_hash": "8245359312aea1b0d2412f79a07b0ca5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-40x40@3x.png": {
+    "mtime": 1779055675.9386573,
+    "ast_hash": "5b3c0902200ce596e9848f22e1f0fe0e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-60x60@2x.png": {
+    "mtime": 1779055676.2050755,
+    "ast_hash": "5b3c0902200ce596e9848f22e1f0fe0e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-60x60@3x.png": {
+    "mtime": 1779055675.7418845,
+    "ast_hash": "e419d22a37bc40ba185aca1acb6d4ac6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-76x76@1x.png": {
+    "mtime": 1779055676.002484,
+    "ast_hash": "36c0d7a7132bdde18898ffdfcfcdc4d2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-76x76@2x.png": {
+    "mtime": 1779055676.9029505,
+    "ast_hash": "643842917530acf4c5159ae851b0baf2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\AppIcon.appiconset\\Icon-App-83.5x83.5@2x.png": {
+    "mtime": 1779055676.6453543,
+    "ast_hash": "665cb5e3c5729da6d639d26eff47a503",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage.png": {
+    "mtime": 1779055675.695956,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage@2x.png": {
+    "mtime": 1779055675.647077,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\ios\\Runner\\Assets.xcassets\\LaunchImage.imageset\\LaunchImage@3x.png": {
+    "mtime": 1779055675.5951555,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_1024.png": {
+    "mtime": 1779055675.48417,
+    "ast_hash": "c9becc9105f8cabce934d20c7bfb6aac",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_128.png": {
+    "mtime": 1779055675.0453565,
+    "ast_hash": "3ded30823804caaa5ccc944067c54a36",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_16.png": {
+    "mtime": 1779055675.1659453,
+    "ast_hash": "8bf511604bc6ed0a6aeb380c5113fdcf",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_256.png": {
+    "mtime": 1779055675.5285864,
+    "ast_hash": "dfe2c93d1536ae02f085cc63faa3430e",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_32.png": {
+    "mtime": 1779055675.2316725,
+    "ast_hash": "8e0ae58e362a6636bdfccbc04da2c58c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_512.png": {
+    "mtime": 1779055675.097033,
+    "ast_hash": "0ad44039155424738917502c69667699",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\macos\\Runner\\Assets.xcassets\\AppIcon.appiconset\\app_icon_64.png": {
+    "mtime": 1779055675.0001628,
+    "ast_hash": "04e7b6ef05346c70b663ca1d97de3ad5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 1.jpg": {
+    "mtime": 1779011721.224196,
+    "ast_hash": "0b35cff5ba84528e2deb01553c3540a4",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 10.jpg": {
+    "mtime": 1779016295.0510736,
+    "ast_hash": "df6e889d305e12c179a2c4c26d222d89",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 11.jpg": {
+    "mtime": 1779016306.440845,
+    "ast_hash": "1e6adfa6575fd6981fea8aee3a5b3b78",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 12.jpg": {
+    "mtime": 1779016315.8658133,
+    "ast_hash": "a713b5461d1086887573df31021ec605",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 13.jpg": {
+    "mtime": 1779016324.4296947,
+    "ast_hash": "e2969bc214320204a53022589b69be34",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 14.jpg": {
+    "mtime": 1779016332.6622353,
+    "ast_hash": "88d3636c5b8697edbf4f1657819df488",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 15.jpg": {
+    "mtime": 1779028221.9300604,
+    "ast_hash": "84bac35850aa4f94fe1d8d9fda8db366",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 16.jpg": {
+    "mtime": 1779028231.8869386,
+    "ast_hash": "fbe522961012b2a3d0152e2135d1107f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 17.jpg": {
+    "mtime": 1779028240.7409327,
+    "ast_hash": "8b8e713261b02660068828205052a628",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 18.jpg": {
+    "mtime": 1779028251.0658255,
+    "ast_hash": "5634441841e34fa268e1a59b355e11b3",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 19.jpg": {
+    "mtime": 1779028259.8634913,
+    "ast_hash": "bd968da82ba685411038074aebd6dab9",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 2.jpg": {
+    "mtime": 1779011762.2282403,
+    "ast_hash": "67c66521ab4410a012664bab5b30dfaf",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 20.jpg": {
+    "mtime": 1779028696.3599062,
+    "ast_hash": "0972ea140ee1ae27a752cb38023ef335",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 21.jpg": {
+    "mtime": 1779028706.4909694,
+    "ast_hash": "46498eabbd2d43c5ed6ade61d06ac589",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 22.jpg": {
+    "mtime": 1779028715.3299236,
+    "ast_hash": "ca76201a5ca145cde9497170511fe61c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 23.jpg": {
+    "mtime": 1779028724.268105,
+    "ast_hash": "9395f4f6287110c4f4b2e6cbf4be18b2",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 24.jpg": {
+    "mtime": 1779028731.7232354,
+    "ast_hash": "938b7a4e306e7315d55c403f4c3a5450",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 25.jpg": {
+    "mtime": 1779028739.781533,
+    "ast_hash": "22455d3f08a12f64a2345407b35db5fa",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 26.jpg": {
+    "mtime": 1779028749.08166,
+    "ast_hash": "5772834ae1e9f6cea11f131977094ea6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 27.jpg": {
+    "mtime": 1779029073.266414,
+    "ast_hash": "76fba25efc9f911f44565f6cdf6f0d3c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 28.jpg": {
+    "mtime": 1779029085.0203614,
+    "ast_hash": "ca76201a5ca145cde9497170511fe61c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 29.jpg": {
+    "mtime": 1779029097.2616742,
+    "ast_hash": "cc42c870e14e5e9d9ab5dffd071f375b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 3.jpg": {
+    "mtime": 1779011774.2125292,
+    "ast_hash": "5772834ae1e9f6cea11f131977094ea6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 30.jpg": {
+    "mtime": 1779029107.657725,
+    "ast_hash": "f0600261cb9547537fe378a40447a157",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 31.jpg": {
+    "mtime": 1779029451.327744,
+    "ast_hash": "22550c5f62884173f41e7bf1dfbd838c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 32.jpg": {
+    "mtime": 1779029459.9555054,
+    "ast_hash": "ddae1c7b4b6d1db0190abe2c240bcf1d",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 33.jpg": {
+    "mtime": 1779029469.5401685,
+    "ast_hash": "3517f19a11c04fdf889cc993ed457cb5",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 34.jpg": {
+    "mtime": 1779029478.4643455,
+    "ast_hash": "1e6adfa6575fd6981fea8aee3a5b3b78",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 35.jpg": {
+    "mtime": 1779029488.3880138,
+    "ast_hash": "d8dc160bb2332c14e01d034706c1e0fb",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 36.jpg": {
+    "mtime": 1779029497.1681097,
+    "ast_hash": "5f099d7c9003879cdb5c29bb32a42a46",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 37.jpg": {
+    "mtime": 1779029504.887737,
+    "ast_hash": "ba57d02bef1276de3093ae0ecd0aa1ed",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 4.jpg": {
+    "mtime": 1779011785.9262648,
+    "ast_hash": "ef16529189cc1669cc7f9280acbfcc2a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 5.jpg": {
+    "mtime": 1779011797.802241,
+    "ast_hash": "7f90274924200c3b065a981eba4bc31a",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 6.jpg": {
+    "mtime": 1779011811.0195363,
+    "ast_hash": "b747ae41f3d5d2e80e2337ece8efcbf6",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 7.jpg": {
+    "mtime": 1779016262.1602373,
+    "ast_hash": "cc42c870e14e5e9d9ab5dffd071f375b",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 8.jpg": {
+    "mtime": 1779016273.8803606,
+    "ast_hash": "d40a6a69f677186d953da29e12f50558",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\UI Reference\\Reference 9.jpg": {
+    "mtime": 1779016284.4256015,
+    "ast_hash": "fa5182acb7078791a2d6af84c368463f",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\favicon.png": {
+    "mtime": 1779055449.4901595,
+    "ast_hash": "5dcef449791fa27946b3d35ad8803796",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\icons\\Icon-192.png": {
+    "mtime": 1779055449.495022,
+    "ast_hash": "ac9a721a12bbc803b44f645561ecb1e1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\icons\\Icon-512.png": {
+    "mtime": 1779055449.4985142,
+    "ast_hash": "96e752610906ba2a93c65f8abe1645f1",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\icons\\Icon-maskable-192.png": {
+    "mtime": 1779055679.8505034,
+    "ast_hash": "c457ef57daa1d16f64b27b786ec2ea3c",
+    "semantic_hash": ""
+  },
+  "C:\\New Drive Data\\Project Tester - Cost Manager & Expenser\\web\\icons\\Icon-maskable-512.png": {
+    "mtime": 1779055679.818598,
+    "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": ""
+  }
+}

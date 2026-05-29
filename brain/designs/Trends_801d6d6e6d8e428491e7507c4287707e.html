@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FCC Analytics - Financial Command Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-teal {
+            filter: drop-shadow(0 0 8px rgba(65, 228, 192, 0.4));
+        }
+        .recessed-input {
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -1px -1px 3px rgba(255, 255, 255, 0.05);
+        }
+        .neumorphic-lift {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(255, 255, 255, 0.02);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#002115",
+                      "surface": "#0c1324",
+                      "secondary-fixed": "#5ffbd6",
+                      "on-error": "#690005",
+                      "on-primary-container": "#78a891",
+                      "surface-container-lowest": "#070d1f",
+                      "on-tertiary-container": "#ff6e82",
+                      "on-tertiary": "#67001e",
+                      "on-surface-variant": "#c0c9c2",
+                      "on-primary-fixed-variant": "#204f3c",
+                      "surface-dim": "#0c1324",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#91002d",
+                      "tertiary-container": "#700021",
+                      "inverse-surface": "#dce1fb",
+                      "surface-container-low": "#151b2d",
+                      "on-secondary": "#00382d",
+                      "outline": "#8a938d",
+                      "on-secondary-fixed-variant": "#005142",
+                      "primary-fixed": "#bbeed3",
+                      "tertiary": "#ffb2b8",
+                      "surface-bright": "#33394c",
+                      "secondary-fixed-dim": "#38debb",
+                      "on-error-container": "#ffdad6",
+                      "outline-variant": "#414944",
+                      "surface-variant": "#2e3447",
+                      "inverse-on-surface": "#2a3043",
+                      "on-background": "#dce1fb",
+                      "surface-container-high": "#23293c",
+                      "tertiary-fixed-dim": "#ffb2b8",
+                      "primary": "#a0d1b8",
+                      "on-surface": "#dce1fb",
+                      "on-secondary-container": "#004d3f",
+                      "inverse-primary": "#396753",
+                      "background": "#0c1324",
+                      "secondary-container": "#00c7a5",
+                      "secondary": "#41e4c0",
+                      "surface-tint": "#a0d1b8",
+                      "on-secondary-fixed": "#002019",
+                      "surface-container-highest": "#2e3447",
+                      "primary-fixed-dim": "#a0d1b8",
+                      "primary-container": "#0a3d2b",
+                      "tertiary-fixed": "#ffdadb",
+                      "on-tertiary-fixed": "#40000f",
+                      "error": "#ffb4ab",
+                      "surface-container": "#191f31",
+                      "on-primary": "#033826"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "container-padding-mobile": "20px",
+                      "gutter": "16px",
+                      "container-padding-desktop": "40px",
+                      "unit": "8px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "display-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-padding-mobile py-stack-sm bg-surface/20 backdrop-blur-xl border-b border-white/10 shadow-sm">
+<div class="flex items-center gap-stack-md">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center border border-secondary/30 overflow-hidden">
+<img alt="User" class="w-full h-full object-cover" data-alt="A high-definition portrait of a sophisticated financial professional in a sleek, dark-themed studio setting. The lighting is dramatic and moody, utilizing deep navy and vibrant forest green highlights. The aesthetic is clean and modern, representing a premium user profile icon for a high-end banking application. The overall atmosphere is elite and technologically advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLshzK_OMujSAdsRLJP1tjXxCWwDt_XbgcGC80IqcRrDtkbKOryIjkm-PIvumFp8_gpCw1LSxNOxaDRVyjcGF9yukSaYSj0cWcLgAFerfPn6WIuKcRp9PsEs4DSoUxj8tK1jnwST0DuBJhXc42BDz3_MyLbFIIlxat5DKH8qZiAasHjWWbWJBQyeILUK3f1nxKSHexlOCE5-v2afoA7zXgZ0nS75flb-Ar-iqAuL1yyR4q43ihymKYwSgvVd4KQ8dQWzWx7IJ_yKWy"/>
+</div>
+<h1 class="font-headline-md text-headline-md-mobile md:text-headline-md font-bold tracking-tighter text-on-surface">FCC</h1>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="p-2 rounded-full hover:bg-surface-variant/30 transition-all duration-300 ease-in-out active:scale-95 text-on-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<main class="mt-24 px-container-padding-mobile md:px-container-padding-desktop max-w-[1440px] mx-auto">
+<!-- Hero Spending Insights -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg mb-stack-lg">
+<div class="md:col-span-2 glass-panel rounded-xl p-stack-lg relative overflow-hidden neumorphic-lift">
+<div class="flex justify-between items-start mb-stack-md">
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant mb-1">Monthly Spending Trend</p>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-white">$12,480.50</h2>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-md">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+12.4%</span>
+</div>
+</div>
+<!-- Mock Trend Line Chart -->
+<div class="h-64 w-full relative mt-stack-lg">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<defs>
+<lineargradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#41e4c0" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#41e4c0" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,80 Q10,75 20,85 T40,60 T60,70 T80,30 T100,45 L100,100 L0,100 Z" fill="url(#chartGradient)"></path>
+<path class="glow-teal" d="M0,80 Q10,75 20,85 T40,60 T60,70 T80,30 T100,45" fill="none" stroke="#41e4c0" stroke-width="2"></path>
+<!-- Data Points -->
+<circle class="glow-teal" cx="80" cy="30" fill="#41e4c0" r="3"></circle>
+</svg>
+<!-- Floating Tooltip -->
+<div class="absolute top-4 right-20 glass-panel px-3 py-2 rounded-lg border border-secondary/40">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Peak Spend</p>
+<p class="font-label-md text-label-md text-secondary">$4,200.00</p>
+</div>
+</div>
+<div class="flex justify-between mt-stack-md font-label-sm text-on-surface-variant/60">
+<span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span>
+</div>
+</div>
+<div class="flex flex-col gap-stack-md">
+<!-- Insight Card 1 -->
+<div class="glass-panel rounded-xl p-stack-md border-l-4 border-tertiary shadow-sm">
+<div class="flex items-center gap-stack-sm mb-2">
+<span class="material-symbols-outlined text-tertiary">warning</span>
+<p class="font-label-md text-label-md text-tertiary">Budget Alert</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface">You spent 30% more this week in <span class="font-bold text-white">Luxury Goods</span> compared to your average.</p>
+</div>
+<!-- Insight Card 2 -->
+<div class="glass-panel rounded-xl p-stack-md border-l-4 border-secondary shadow-sm">
+<div class="flex items-center gap-stack-sm mb-2">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<p class="font-label-md text-label-md text-secondary">Efficiency Peak</p>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Recurring subscriptions decreased by <span class="font-bold text-white">$120/mo</span> after pruning.</p>
+</div>
+<!-- Insight Card 3 -->
+<div class="glass-panel rounded-xl p-stack-md border-l-4 border-primary shadow-sm h-full flex flex-col justify-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-1">Projected Balance</p>
+<p class="font-headline-md text-headline-md text-white">$45,210.00</p>
+<p class="font-label-sm text-label-sm text-primary">Expected by EOM</p>
+</div>
+</div>
+</section>
+<!-- Analytics Breakdown -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg mb-stack-lg">
+<!-- Pie Chart Section -->
+<div class="glass-panel rounded-xl p-stack-lg neumorphic-lift">
+<div class="flex justify-between items-center mb-stack-lg">
+<h3 class="font-headline-md text-headline-md-mobile md:text-headline-md text-white">Expense Categories</h3>
+<button class="font-label-md text-label-md text-secondary flex items-center gap-1">
+                        View Detailed <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-stack-lg">
+<!-- Donut Chart -->
+<div class="relative w-48 h-48">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="16" stroke="#2e3447" stroke-width="4"></circle>
+<circle class="glow-teal" cx="18" cy="18" fill="none" r="16" stroke="#41e4c0" stroke-dasharray="45, 100" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="none" r="16" stroke="#a0d1b8" stroke-dasharray="25, 100" stroke-dashoffset="-45" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="none" r="16" stroke="#ffb2b8" stroke-dasharray="30, 100" stroke-dashoffset="-70" stroke-width="4"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Total</p>
+<p class="font-headline-md text-headline-md text-white">100%</p>
+</div>
+</div>
+<!-- Legend -->
+<div class="flex-1 w-full space-y-stack-md">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="font-label-md text-label-md text-on-surface">Essentials</span>
+</div>
+<span class="font-label-md text-label-md text-white">45%</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="font-label-md text-label-md text-on-surface">Investment</span>
+</div>
+<span class="font-label-md text-label-md text-white">25%</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-tertiary"></div>
+<span class="font-label-md text-label-md text-on-surface">Luxury</span>
+</div>
+<span class="font-label-md text-label-md text-white">30%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recessed Search/Filter Interface -->
+<div class="glass-panel rounded-xl p-stack-lg flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-white mb-stack-md">Search Transactions</h3>
+<div class="relative mb-stack-lg">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-lowest/50 border-none rounded-xl py-4 pl-12 pr-4 recessed-input focus:ring-1 focus:ring-secondary text-white placeholder:text-on-surface-variant/40" placeholder="Filter by vendor or category..." type="text"/>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-label-sm">Amazon</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant font-label-sm">Starbucks</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant font-label-sm">Apple</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant font-label-sm">Uber</span>
+<span class="px-3 py-1 rounded-full bg-surface-variant/50 border border-white/5 text-on-surface-variant font-label-sm">Netflix</span>
+</div>
+</div>
+<button class="mt-stack-lg w-full bg-gradient-to-r from-secondary to-primary-container text-on-primary-fixed font-bold py-4 rounded-xl neumorphic-lift active:scale-95 transition-all">
+                    Export Full Analytics Report
+                </button>
+</div>
+</section>
+<!-- Bento Grid Bottom Section -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-stack-md mb-stack-lg">
+<div class="glass-panel p-stack-md rounded-xl text-center">
+<span class="material-symbols-outlined text-secondary mb-2" style="font-size: 32px;">account_balance</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Accounts</p>
+<p class="font-headline-md text-headline-md text-white">12</p>
+</div>
+<div class="glass-panel p-stack-md rounded-xl text-center">
+<span class="material-symbols-outlined text-primary mb-2" style="font-size: 32px;">receipt_long</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Transactions</p>
+<p class="font-headline-md text-headline-md text-white">842</p>
+</div>
+<div class="glass-panel p-stack-md rounded-xl text-center">
+<span class="material-symbols-outlined text-tertiary mb-2" style="font-size: 32px;">priority_high</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Anomalies</p>
+<p class="font-headline-md text-headline-md text-white">3</p>
+</div>
+<div class="glass-panel p-stack-md rounded-xl text-center">
+<span class="material-symbols-outlined text-secondary mb-2" style="font-size: 32px;">bolt</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Credit Score</p>
+<p class="font-headline-md text-headline-md text-white">812</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-surface-container/40 backdrop-blur-2xl border-t border-white/20 shadow-[0_-4px_20px_rgba(0,0,0,0.4)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-sm text-label-sm-mobile">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm-mobile">Wallets</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-size: 40px;">add_circle</span>
+<span class="font-label-sm text-label-sm-mobile">Add</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-label-sm text-label-sm-mobile">Loans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary drop-shadow-[0_0_8px_rgba(65,228,192,0.6)] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="font-label-sm text-label-sm-mobile">Trends</span>
+</a>
+</nav>
+</body></html>

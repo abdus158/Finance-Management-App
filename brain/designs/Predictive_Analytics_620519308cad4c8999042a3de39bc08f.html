@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FinTrack | Predictive Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary": "#00363a",
+                "surface-variant": "#303636",
+                "on-secondary-fixed-variant": "#610bb8",
+                "inverse-on-surface": "#2b3132",
+                "tertiary-fixed": "#eaddff",
+                "on-primary-fixed-variant": "#004f54",
+                "surface-container-high": "#252b2c",
+                "tertiary-container": "#b898ff",
+                "surface-tint": "#50d9e4",
+                "surface-dim": "#0e1415",
+                "primary-fixed-dim": "#50d9e4",
+                "secondary-container": "#6311bb",
+                "on-tertiary-fixed": "#24005b",
+                "surface-container": "#1b2121",
+                "surface-bright": "#343a3b",
+                "surface-container-highest": "#303636",
+                "on-tertiary": "#3d008f",
+                "on-surface-variant": "#bbc9ca",
+                "on-secondary-container": "#cca8ff",
+                "secondary-fixed": "#eddcff",
+                "background": "#0e1415",
+                "on-primary-container": "#00464b",
+                "on-error-container": "#ffdad6",
+                "surface-container-low": "#171d1d",
+                "on-background": "#dee4e4",
+                "on-surface": "#dee4e4",
+                "on-tertiary-container": "#4d12a8",
+                "secondary-fixed-dim": "#d7baff",
+                "secondary": "#d7baff",
+                "tertiary": "#d2bcff",
+                "primary-container": "#22bbc6",
+                "surface-container-lowest": "#090f10",
+                "on-secondary": "#440087",
+                "primary": "#50d9e4",
+                "tertiary-fixed-dim": "#d2bcff",
+                "on-error": "#690005",
+                "surface": "#0e1415",
+                "on-secondary-fixed": "#290055",
+                "outline": "#869394",
+                "error": "#ffb4ab",
+                "outline-variant": "#3c494a",
+                "error-container": "#93000a",
+                "on-tertiary-fixed-variant": "#5621b1",
+                "inverse-surface": "#dee4e4",
+                "primary-fixed": "#7bf4ff",
+                "on-primary-fixed": "#002022",
+                "inverse-primary": "#006970"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "margin-mobile": "16px",
+                "unit": "8px",
+                "max-width": "1440px",
+                "gutter": "24px",
+                "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                "headline-lg-mobile": ["Outfit"],
+                "body-md": ["Space Grotesk"],
+                "display-lg": ["Outfit"],
+                "headline-lg": ["Outfit"],
+                "label-sm": ["Space Grotesk"],
+                "headline-md": ["Outfit"],
+                "body-lg": ["Space Grotesk"],
+                "label-md": ["Space Grotesk"]
+            },
+            "fontSize": {
+                "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(27, 33, 33, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(240, 240, 240, 0.1);
+        }
+        .neon-teal-glow {
+            box-shadow: 0 0 15px rgba(34, 187, 198, 0.3);
+        }
+        .neon-amber-glow {
+            box-shadow: 0 0 20px rgba(255, 180, 171, 0.2);
+        }
+        .spline-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+        }
+        .square-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 0px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24">
+<!-- TopAppBar Shell -->
+<header class="w-full top-0 sticky z-50 bg-background/40 backdrop-blur-xl border-b border-on-surface/10 shadow-[0_0_15px_rgba(34,187,198,0.2)] flex justify-between items-center px-margin-mobile h-16 md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer transition-all duration-300 ease-in-out active:scale-95">menu</span>
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">FinTrack</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
+<img alt="FinTrack User Avatar" class="w-full h-full object-cover" data-alt="A professional headshot of a person with a tech-savvy aesthetic, set against a dark, minimalist background with subtle cyan rim lighting. The style is cinematic and high-fidelity, reflecting a premium Fintech user profile. The lighting is soft and directional, emphasizing clarity and modern sophistication in a Neo-Cyber environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy5BpKueLv3HKUK1xRDS4JhJ_Z69VHTGzvxz1dQoa7Ypqe3xYfhui67EYSLo3BH37paY5Wadn4GsSaYFltNPHwqmGt3xdXwaiosE1fbpR0qB9rSR1Fb0v55Vs8cvbbgCWNlYAQI_eD1_AN5YUeSywt2Hf5Rwrbyddv3E8xdo0Y6unmDpBZoU8CJP3WhZQJNPcxpmP6s_6-3majHw4a8UgMFufSnrGk8iZLq06pGZm6HaH5BD93EHksTJd9NG4TuGmfi5CsXEJ0tEhQ"/>
+</div>
+</div>
+</header>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8">
+<!-- Alert Banner -->
+<section class="mb-gutter">
+<div class="glass-panel p-6 rounded-xl border-error/20 neon-amber-glow relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="flex items-start gap-4">
+<div class="bg-error/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex-1">
+<h2 class="font-headline-md text-headline-md text-error mb-1">Liquidity Alert</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                            Predicted cash flow deficit of <span class="text-error font-bold">$4,240.00</span> expected on Oct 24th. Recommend delaying scheduled vendor payments or initiating credit draw.
+                        </p>
+</div>
+<button class="bg-error text-on-error px-6 py-2 rounded-lg font-label-md text-label-md font-bold transition-all duration-300 ease-in-out active:scale-95 shadow-lg shadow-error/30">
+                        RESOLVE NOW
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Hero Analytics: Projected Cash Flow (Spline Chart) -->
+<div class="md:col-span-8 glass-panel p-8 rounded-xl relative">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">30-Day Forecast</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Intelligent Liquidity Projection</p>
+</div>
+<div class="flex gap-2">
+<div class="square-indicator bg-primary"></div>
+<div class="square-indicator bg-outline"></div>
+<div class="square-indicator bg-outline"></div>
+</div>
+</div>
+<!-- Spline Chart Visualization -->
+<div class="h-64 w-full relative">
+<svg class="w-full h-full" viewbox="0 0 800 200">
+<!-- Grid Lines -->
+<line stroke="#869394" stroke-opacity="0.1" x1="0" x2="800" y1="50" y2="50"></line>
+<line stroke="#869394" stroke-opacity="0.1" x1="0" x2="800" y1="100" y2="100"></line>
+<line stroke="#869394" stroke-opacity="0.1" x1="0" x2="800" y1="150" y2="150"></line>
+<!-- Glowing Spline Path -->
+<path class="spline-path drop-shadow-[0_0_8px_rgba(80,217,228,0.8)]" d="M0,120 Q100,100 200,150 T400,80 T600,160 T800,40" fill="none" stroke="#50d9e4" stroke-width="4"></path>
+<!-- Deficit Marker -->
+<circle class="animate-pulse" cx="600" cy="160" fill="#ffb4ab" r="6"></circle>
+<text class="font-label-sm text-label-sm" fill="#ffb4ab" x="560" y="190">Deficit Node</text>
+</svg>
+<!-- Chart Labels -->
+<div class="flex justify-between mt-4 text-outline font-label-sm text-label-sm">
+<span>OCT 01</span>
+<span>OCT 10</span>
+<span>OCT 20</span>
+<span>OCT 30</span>
+</div>
+</div>
+</div>
+<!-- Side Metric: Key Insights -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="glass-panel p-6 rounded-xl flex-1 flex flex-col justify-center border-primary/10">
+<span class="material-symbols-outlined text-primary-container mb-4 text-4xl">analytics</span>
+<h4 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-2">Net Burn Rate</h4>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary">$1,240</span>
+<span class="font-label-md text-label-md text-error">/ DAY</span>
+</div>
+<div class="mt-4 w-full bg-surface-variant h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-3/4 shadow-[0_0_10px_rgba(80,217,228,0.6)]"></div>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-xl flex-1 flex flex-col justify-center border-tertiary/10">
+<span class="material-symbols-outlined text-tertiary mb-4 text-4xl">savings</span>
+<h4 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-2">Optimization Opportunity</h4>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-tertiary">+$2.4k</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline mt-2">Unused subscription credits detected.</p>
+</div>
+</div>
+<!-- Transaction Predictions -->
+<div class="md:col-span-12 glass-panel rounded-xl overflow-hidden">
+<div class="px-8 py-6 border-b border-on-surface/10 flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Upcoming Impact Events</h3>
+<button class="text-primary font-label-md text-label-md flex items-center gap-1 hover:underline">
+                        VIEW ALL <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="p-0">
+<!-- Table-like List -->
+<div class="flex items-center px-8 py-4 border-b border-on-surface/5 hover:bg-white/5 transition-colors group">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mr-6 border border-on-surface/10">
+<span class="material-symbols-outlined text-on-surface-variant">cloud</span>
+</div>
+<div class="flex-1">
+<h5 class="font-body-md text-body-md text-on-surface">AWS Infrastructure</h5>
+<p class="font-label-sm text-label-sm text-outline">Oct 18 • High Confidence</p>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md text-on-surface">-$1,840.00</p>
+<p class="font-label-sm text-label-sm text-primary">Pending Autopay</p>
+</div>
+</div>
+<div class="flex items-center px-8 py-4 border-b border-on-surface/5 hover:bg-white/5 transition-colors group">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mr-6 border border-on-surface/10">
+<span class="material-symbols-outlined text-on-surface-variant">account_balance</span>
+</div>
+<div class="flex-1">
+<h5 class="font-body-md text-body-md text-on-surface">Q4 Tax Provision</h5>
+<p class="font-label-sm text-label-sm text-outline">Oct 24 • Critical Impact</p>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md text-error">-$12,500.00</p>
+<p class="font-label-sm text-label-sm text-error">Liquidity Threat</p>
+</div>
+</div>
+<div class="flex items-center px-8 py-4 hover:bg-white/5 transition-colors group">
+<div class="w-12 h-12 bg-surface-container rounded flex items-center justify-center mr-6 border border-on-surface/10">
+<span class="material-symbols-outlined text-on-surface-variant">payments</span>
+</div>
+<div class="flex-1">
+<h5 class="font-body-md text-body-md text-on-surface">Stripe Payout Prediction</h5>
+<p class="font-label-sm text-label-sm text-outline">Oct 26 • ML Estimated</p>
+</div>
+<div class="text-right">
+<p class="font-body-md text-body-md text-primary">+$8,200.00</p>
+<p class="font-label-sm text-label-sm text-outline">Forecasted Inflow</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-8 w-14 h-14 bg-primary text-on-primary rounded-full shadow-[0_0_20px_rgba(80,217,228,0.5)] flex items-center justify-center transition-transform duration-200 active:scale-90 z-50">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-full bg-surface-container/30 backdrop-blur-2xl border-t border-on-surface/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 px-2 pb-safe">
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm">Debt</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90 bg-primary/20 p-3 rounded-full -mt-10 border border-primary/30 neon-teal-glow">
+<span class="material-symbols-outlined text-primary">add</span>
+</div>
+<div class="flex flex-col items-center justify-center text-primary drop-shadow-[0_0_8px_rgba(80,217,228,0.8)] transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-label-sm text-label-sm">Insight</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">more_horiz</span>
+<span class="font-label-sm text-label-sm">Menu</span>
+</div>
+</nav>
+</body></html>

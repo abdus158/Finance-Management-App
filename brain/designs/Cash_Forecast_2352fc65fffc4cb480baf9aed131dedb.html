@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cash Forecast | FinTrack</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#bbc9ca",
+                        "inverse-primary": "#006970",
+                        "background": "#06030d",
+                        "surface-tint": "#50d9e4",
+                        "on-secondary": "#440087",
+                        "tertiary-fixed-dim": "#d2bcff",
+                        "on-tertiary-fixed-variant": "#5621b1",
+                        "primary-fixed": "#7bf4ff",
+                        "error-container": "#93000a",
+                        "surface-container-lowest": "#090f10",
+                        "on-primary-fixed": "#002022",
+                        "primary": "#50d9e4",
+                        "surface-container": "#1b2121",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#00363a",
+                        "surface-container-highest": "#303636",
+                        "tertiary-container": "#b898ff",
+                        "inverse-surface": "#dee4e4",
+                        "error": "#ffb4ab",
+                        "outline": "#869394",
+                        "secondary-fixed": "#eddcff",
+                        "on-secondary-fixed": "#290055",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#2b3132",
+                        "on-secondary-fixed-variant": "#610bb8",
+                        "on-secondary-container": "#cca8ff",
+                        "tertiary-fixed": "#eaddff",
+                        "surface-variant": "#303636",
+                        "secondary-fixed-dim": "#d7baff",
+                        "outline-variant": "#3c494a",
+                        "on-tertiary-fixed": "#24005b",
+                        "surface": "#0e1415",
+                        "primary-fixed-dim": "#50d9e4",
+                        "primary-container": "#22bbc6",
+                        "on-surface": "#dee4e4",
+                        "surface-container-high": "#252b2c",
+                        "on-background": "#dee4e4",
+                        "on-tertiary-container": "#4d12a8",
+                        "on-tertiary": "#3d008f",
+                        "secondary-container": "#6311bb",
+                        "secondary": "#d7baff",
+                        "surface-container-low": "#171d1d",
+                        "tertiary": "#d2bcff",
+                        "on-primary-fixed-variant": "#004f54",
+                        "surface-dim": "#0e1415",
+                        "surface-bright": "#343a3b",
+                        "on-primary-container": "#00464b",
+                        "warning-amber": "#F59E0B"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "max-width": "1440px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Space Grotesk"],
+                        "headline-lg": ["Outfit"],
+                        "display-lg": ["Outfit"],
+                        "body-lg": ["Space Grotesk"],
+                        "label-md": ["Space Grotesk"],
+                        "headline-lg-mobile": ["Outfit"],
+                        "headline-md": ["Outfit"],
+                        "body-md": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(27, 33, 33, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(240, 240, 240, 0.1);
+        }
+        .warning-glass {
+            background: rgba(245, 158, 11, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+        .neon-teal {
+            box-shadow: 0 0 15px rgba(34, 187, 198, 0.4);
+        }
+        .neon-amber {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+        }
+        .chart-glow {
+            filter: drop-shadow(0 0 8px rgba(80, 217, 228, 0.6));
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary/30 min-h-screen pb-24">
+<!-- Top App Bar (Shared Component) -->
+<header class="w-full top-0 sticky bg-background/40 backdrop-blur-xl border-b border-on-surface/10 shadow-[0_0_15px_rgba(34,187,198,0.2)] z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer transition-all duration-300 ease-in-out active:scale-95 hover:bg-primary/10 p-2 rounded-lg">menu</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">FinTrack</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="text-primary font-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md transition-colors" href="#">Debt</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md transition-colors" href="#">Insight</a>
+</nav>
+<div class="w-10 h-10 rounded-full border border-primary/30 overflow-hidden cursor-pointer transition-all active:scale-95">
+<img alt="User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwRnELMA1V3zFNQDPfprbcrDpsA1MdWlkW8o1vIj3X2NFAYSRn0vxciJFsWloTikjTX34YVJRLTapb3-JzkFb9P76-baQOo3muaYR7LuLfF0sn1cgoazvWXP5FR5B1GlAA1vUeDlsi-n3Eaneb4bGtgqsZQ0FeRpeA2D5OjoVtLW4BuqgZD9Zc1sE0aBSLeU0D9PwDkIOMDoXd7RUPbyL42IwMI2MsPdvA4Jg1ZjshfPS9jlfKubEXaCZKRHIhFhl5Cv0flwnpF-SP"/>
+</div>
+</div>
+</header>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-8 space-y-8">
+<!-- Page Title & Hero Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Cash Forecast</h2>
+<p class="font-body-md text-on-surface-variant mt-2">Predictive analytics for the next 30 financial days.</p>
+</div>
+<!-- Square Slide Indicators -->
+<div class="flex gap-2 pb-2">
+<div class="w-3 h-3 bg-primary neon-teal"></div>
+<div class="w-3 h-3 bg-outline/30"></div>
+<div class="w-3 h-3 bg-outline/30"></div>
+</div>
+</div>
+<!-- Warning Section -->
+<section class="warning-glass neon-amber p-6 rounded-xl flex items-start gap-4">
+<span class="material-symbols-outlined text-warning-amber text-3xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+<div>
+<h3 class="font-headline-md text-warning-amber text-lg font-bold">Liquidity Alert</h3>
+<p class="font-body-md text-on-surface mt-1">Potential $1,200 deficit projected for next Friday. Consider moving funds from your secondary reserve account.</p>
+</div>
+</section>
+<!-- Main Forecast Section (Bento Grid Style) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Forecast Chart Panel -->
+<section class="lg:col-span-8 glass-panel rounded-xl p-8 min-h-[400px] flex flex-col justify-between overflow-hidden relative">
+<div class="flex justify-between items-start z-10">
+<div>
+<p class="font-label-md text-on-surface-variant uppercase tracking-widest">Net Position Trend</p>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-md mt-1">$42,850.00</h3>
+</div>
+<div class="flex bg-surface-container-highest rounded-lg p-1">
+<button class="px-4 py-1 font-label-sm bg-primary text-on-primary rounded-md">30 Days</button>
+<button class="px-4 py-1 font-label-sm text-on-surface-variant hover:text-primary">90 Days</button>
+</div>
+</div>
+<!-- Abstract Glowing Spline Chart Simulation -->
+<div class="absolute inset-0 top-32 flex items-end px-8 pb-16 pointer-events-none">
+<svg class="w-full h-48 chart-glow" preserveaspectratio="none" viewbox="0 0 1000 200">
+<path d="M0,150 Q100,140 200,100 T400,160 T600,60 T800,110 T1000,40" fill="none" stroke="#50d9e4" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="200" cy="100" fill="#50d9e4" r="6"></circle>
+<circle cx="600" cy="60" fill="#50d9e4" r="6"></circle>
+<circle cx="400" cy="160" fill="#F59E0B" r="6"></circle> <!-- The Deficit Point -->
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-outline mt-auto pt-8 z-10">
+<span>Oct 24</span>
+<span>Nov 03</span>
+<span class="text-warning-amber">Nov 13 (Projected Dip)</span>
+<span>Nov 23</span>
+</div>
+</section>
+<!-- Quick Stats / Isometric Hero Object -->
+<section class="lg:col-span-4 glass-panel rounded-xl p-8 flex flex-col justify-center items-center text-center relative overflow-hidden">
+<div class="z-10 space-y-4">
+<div class="inline-block p-4 rounded-full bg-secondary-container/20 border border-secondary/30 mb-4">
+<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<h4 class="font-headline-md text-on-surface">Insight Engine</h4>
+<p class="font-body-md text-on-surface-variant">AI predicts a 12% increase in operational overhead based on current AWS usage trends.</p>
+<button class="mt-4 px-6 py-2 bg-primary text-on-primary font-bold rounded-lg neon-teal transition-all active:scale-95">Optimize Spend</button>
+</div>
+<!-- 3D Isometric Background Element (Stylized using pure CSS/SVG shapes for weight) -->
+<div class="absolute -right-16 -bottom-16 opacity-20 transform rotate-12">
+<div class="w-48 h-48 bg-primary/30 border-4 border-primary/50 flex items-center justify-center">
+<div class="w-24 h-24 bg-primary/40 border-2 border-primary"></div>
+</div>
+</div>
+</section>
+</div>
+<!-- Bottom Section: Upcoming Obligations -->
+<section class="space-y-6">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-md text-on-surface">Upcoming Obligations</h3>
+<button class="text-primary font-label-md flex items-center gap-1 hover:underline">
+                    View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Bill Item 1 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-48 border-l-4 border-primary/40 transition-all hover:bg-surface-container-high/60 cursor-pointer group">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-on-surface-variant">Office Rent</p>
+<h4 class="font-headline-md text-on-surface mt-1">$4,500.00</h4>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-3 py-1 rounded-full bg-primary/20 text-primary font-label-sm mb-2">Syncing</span>
+<p class="font-label-sm text-outline">Due Nov 01</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="font-label-sm">Metropolitan Tower HQ</span>
+</div>
+</div>
+<!-- Bill Item 2 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-48 border-l-4 border-warning-amber/40 transition-all hover:bg-surface-container-high/60 cursor-pointer group">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-on-surface-variant">AWS Hosting</p>
+<h4 class="font-headline-md text-on-surface mt-1">$1,280.45</h4>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-3 py-1 rounded-full bg-outline-variant text-on-surface-variant font-label-sm mb-2">Local</span>
+<p class="font-label-sm text-outline">Due Nov 05</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline group-hover:text-warning-amber transition-colors">
+<span class="material-symbols-outlined text-sm">cloud</span>
+<span class="font-label-sm">Cloud Infrastructure</span>
+</div>
+</div>
+<!-- Bill Item 3 -->
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-48 border-l-4 border-secondary/40 transition-all hover:bg-surface-container-high/60 cursor-pointer group">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-md text-on-surface-variant">Salaries</p>
+<h4 class="font-headline-md text-on-surface mt-1">$18,400.00</h4>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-3 py-1 rounded-full bg-secondary/20 text-secondary font-label-sm mb-2">Syncing</span>
+<p class="font-label-sm text-outline">Due Nov 15</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-sm">group</span>
+<span class="font-label-sm">12 Team Members</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Decorative Spacer for FAB visibility -->
+<div class="h-16"></div>
+</main>
+<!-- Bottom Navigation Bar (Shared Component) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-full bg-surface-container/30 backdrop-blur-2xl border-t border-on-surface/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] md:hidden">
+<div class="flex justify-around items-center h-20 px-2 pb-safe">
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm mt-1">Debt</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90 -translate-y-4">
+<div class="w-14 h-14 bg-primary text-on-primary rounded-full flex items-center justify-center neon-teal">
+<span class="material-symbols-outlined text-3xl">add</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-primary drop-shadow-[0_0_8px_rgba(80,217,228,0.8)] transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm mt-1">Insight</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform duration-200 active:scale-90">
+<span class="material-symbols-outlined">more_horiz</span>
+<span class="font-label-sm text-label-sm mt-1">Menu</span>
+</div>
+</div>
+</nav>
+<!-- FAB for Desktop/Wide -->
+<button class="hidden md:flex fixed bottom-8 right-8 w-16 h-16 bg-primary text-on-primary rounded-full items-center justify-center neon-teal transition-all duration-300 active:scale-95 hover:scale-105 z-40">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</body></html>

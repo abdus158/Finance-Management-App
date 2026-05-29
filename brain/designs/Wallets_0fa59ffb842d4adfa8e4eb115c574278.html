@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Financial Command Center - Wallet Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #0e1415; /* Using theme background */
+            font-family: 'Space Grotesk', sans-serif;
+            color: #dee4e4;
+        }
+        .glass-card {
+            background: rgba(48, 54, 54, 0.2);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(80, 217, 228, 0.15);
+        }
+        .neo-glow-teal {
+            box-shadow: 0 0 15px rgba(80, 217, 228, 0.3);
+        }
+        .neo-glow-purple {
+            box-shadow: 0 0 15px rgba(184, 152, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#b898ff",
+                      "surface-container-low": "#171d1d",
+                      "on-secondary": "#440087",
+                      "inverse-surface": "#dee4e4",
+                      "outline": "#869394",
+                      "on-secondary-fixed-variant": "#610bb8",
+                      "tertiary": "#d2bcff",
+                      "surface-bright": "#343a3b",
+                      "primary-fixed": "#7bf4ff",
+                      "surface-container-lowest": "#090f10",
+                      "on-tertiary-container": "#4d12a8",
+                      "on-tertiary": "#3d008f",
+                      "on-surface-variant": "#bbc9ca",
+                      "on-primary-fixed-variant": "#004f54",
+                      "surface-dim": "#0e1415",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#5621b1",
+                      "secondary-fixed": "#eddcff",
+                      "on-error": "#690005",
+                      "on-primary-container": "#00464b",
+                      "on-primary-fixed": "#002022",
+                      "surface": "#0e1415",
+                      "error": "#ffb4ab",
+                      "surface-container": "#1b2121",
+                      "on-primary": "#00363a",
+                      "secondary-container": "#6311bb",
+                      "surface-tint": "#50d9e4",
+                      "secondary": "#d7baff",
+                      "on-secondary-fixed": "#290055",
+                      "surface-container-highest": "#303636",
+                      "primary-fixed-dim": "#50d9e4",
+                      "primary-container": "#22bbc6",
+                      "tertiary-fixed": "#eaddff",
+                      "on-tertiary-fixed": "#24005b",
+                      "primary": "#50d9e4",
+                      "on-surface": "#dee4e4",
+                      "on-secondary-container": "#cca8ff",
+                      "inverse-primary": "#006970",
+                      "background": "#0e1415",
+                      "secondary-fixed-dim": "#d7baff",
+                      "on-error-container": "#ffdad6",
+                      "surface-variant": "#303636",
+                      "outline-variant": "#3c494a",
+                      "on-background": "#dee4e4",
+                      "inverse-on-surface": "#2b3132",
+                      "tertiary-fixed-dim": "#d2bcff",
+                      "surface-container-high": "#252b2c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "max-width": "1440px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Outfit"],
+                      "display-lg": ["Outfit"],
+                      "headline-md": ["Outfit"],
+                      "headline-lg": ["Outfit"],
+                      "body-md": ["Space Grotesk"],
+                      "label-sm": ["Space Grotesk"],
+                      "label-md": ["Space Grotesk"],
+                      "body-lg": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-50 w-full h-16 bg-surface/40 backdrop-blur-[20px] flex justify-between items-center px-margin-mobile md:px-margin-desktop border-b border-on-surface/10 shadow-[0_0_15px_rgba(80,217,228,0.1)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:bg-surface-variant/20 transition-colors p-2 rounded-lg" data-icon="grid_view">grid_view</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">EN</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<nav class="flex gap-6">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Market</a>
+<a class="font-label-md text-label-md text-primary" href="#">Wallets</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Analytics</a>
+</nav>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container/30 border border-primary/20 flex items-center justify-center overflow-hidden">
+<img alt="User avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQqATAlnvm19ZDeFLMrNW8TBgxLn08fmJWAMRysY6A7EVAefB7Z5MQhtrJbzSDKcK7AbAKFxOBF_WYMxVXfPw6Z8GWMQdRm2o3hKbz2RfCZKG3IAm_Zqov2AJ4E3Jt1ufHlE2GTBJZOLiyu6bFEX3zz_054tHgQK8EuUUEF3NWqDJhwwT4xvJu39BRHnojHHddvGO90Cp1invDkNLsPMegzS35GEjeoGtYWR31TDdI6v7YNZIGJmUml3tS345opA4w9Sh7f6jEX_UT"/>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-32 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto w-full">
+<!-- Hero Section with Glass Wallet Carousel -->
+<section class="mb-12">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2">My Portfolios</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Global liquidity management system</p>
+</div>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 px-6 py-3 border border-primary rounded-xl font-label-md text-label-md text-primary hover:bg-primary/10 transition-all active:scale-95 neo-glow-teal">
+<span class="material-symbols-outlined text-[20px]" data-icon="add_box">add_box</span>
+                        NEW WALLET
+                    </button>
+<button class="flex items-center gap-2 px-6 py-3 border border-tertiary-container rounded-xl font-label-md text-label-md text-tertiary-container hover:bg-tertiary-container/10 transition-all active:scale-95 neo-glow-purple">
+<span class="material-symbols-outlined text-[20px]" data-icon="currency_exchange">currency_exchange</span>
+                        TRANSFER
+                    </button>
+</div>
+</div>
+<!-- Carousel Area -->
+<div class="relative group">
+<div class="flex gap-gutter overflow-x-auto pb-8 no-scrollbar">
+<!-- Card 1: Main Bank -->
+<div class="glass-card flex-shrink-0 w-full md:w-[400px] p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all"></div>
+<div class="flex justify-between items-start mb-12">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-1">Corporate Bank</span>
+<span class="font-headline-md text-headline-md text-on-surface">Chase Treasury</span>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+<div class="mb-8">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Available Balance</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">$142,500.00</span>
+<span class="font-label-md text-label-md text-primary">+2.4%</span>
+</div>
+</div>
+<div class="flex justify-between items-center border-t border-on-surface/10 pt-6">
+<span class="font-label-sm text-label-sm text-outline">**** 8821</span>
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase tracking-tighter border border-primary/20">Active</span>
+</div>
+</div>
+<!-- Card 2: Digital Assets -->
+<div class="glass-card flex-shrink-0 w-full md:w-[400px] p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-tertiary/5 rounded-full blur-3xl group-hover:bg-tertiary/10 transition-all"></div>
+<div class="flex justify-between items-start mb-12">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest mb-1">Digital Wallet</span>
+<span class="font-headline-md text-headline-md text-on-surface">Web3 Ledger</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="token">token</span>
+</div>
+<div class="mb-8">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Available Balance</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">12.45 ETH</span>
+<span class="font-label-md text-label-md text-error">-0.8%</span>
+</div>
+</div>
+<div class="flex justify-between items-center border-t border-on-surface/10 pt-6">
+<span class="font-label-sm text-label-sm text-outline">0x71C...4eD1</span>
+<span class="px-3 py-1 bg-tertiary/10 text-tertiary text-[10px] font-bold rounded uppercase tracking-tighter border border-tertiary/20">Synced</span>
+</div>
+</div>
+<!-- Card 3: Cash -->
+<div class="glass-card flex-shrink-0 w-full md:w-[400px] p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="flex justify-between items-start mb-12">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest mb-1">Physical Liquidity</span>
+<span class="font-headline-md text-headline-md text-on-surface">Secure Vault A</span>
+</div>
+<span class="material-symbols-outlined text-outline text-3xl" data-icon="payments">payments</span>
+</div>
+<div class="mb-8">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Stashed Cash</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">$4,200.00</span>
+</div>
+</div>
+<div class="flex justify-between items-center border-t border-on-surface/10 pt-6">
+<span class="font-label-sm text-label-sm text-outline">LOC: SECTOR 7</span>
+<span class="px-3 py-1 bg-outline/10 text-outline text-[10px] font-bold rounded uppercase tracking-tighter border border-outline/20">Manual</span>
+</div>
+</div>
+</div>
+<!-- Slide Indicators (Square Dots) -->
+<div class="flex justify-center gap-3 mt-4">
+<div class="w-2.5 h-2.5 bg-primary"></div>
+<div class="w-2.5 h-2.5 bg-[#666666]"></div>
+<div class="w-2.5 h-2.5 bg-[#666666]"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid for Wallet Details & Stats -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Asset Distribution Chart (Placeholder for high-end UI) -->
+<div class="md:col-span-8 glass-card p-8 rounded-xl min-h-[400px]">
+<div class="flex justify-between items-center mb-10">
+<h3 class="font-headline-md text-headline-md text-on-surface">Portfolio Growth</h3>
+<div class="flex bg-surface-variant/30 p-1 rounded-lg">
+<button class="px-4 py-1 text-label-sm font-label-sm text-primary bg-surface-container rounded">1W</button>
+<button class="px-4 py-1 text-label-sm font-label-sm text-outline">1M</button>
+<button class="px-4 py-1 text-label-sm font-label-sm text-outline">ALL</button>
+</div>
+</div>
+<div class="h-64 flex items-end gap-4">
+<!-- Abstract Visualization -->
+<div class="flex-grow bg-surface-variant/20 relative rounded-lg overflow-hidden h-full">
+<div class="absolute bottom-0 left-0 w-full h-[60%] bg-primary/10 border-t-2 border-primary"></div>
+<div class="absolute bottom-0 left-0 w-full h-[30%] bg-tertiary/10 border-t-2 border-tertiary"></div>
+<div class="flex items-end justify-around h-full px-4">
+<div class="w-2 bg-primary/40 h-[40%] rounded-t"></div>
+<div class="w-2 bg-primary/40 h-[55%] rounded-t"></div>
+<div class="w-2 bg-primary/40 h-[45%] rounded-t"></div>
+<div class="w-2 bg-primary h-[70%] rounded-t shadow-[0_0_10px_#50d9e4]"></div>
+<div class="w-2 bg-primary/40 h-[60%] rounded-t"></div>
+<div class="w-2 bg-primary/40 h-[85%] rounded-t"></div>
+<div class="w-2 bg-primary/40 h-[75%] rounded-t"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats Bento -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="glass-card p-6 rounded-xl flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="p-2 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Real-time Gas Fee</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">24 Gwei</div>
+<p class="text-label-sm font-label-sm text-primary mt-2">Optimal for transfers</p>
+</div>
+<div class="glass-card p-6 rounded-xl flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="p-2 bg-tertiary/10 rounded-lg">
+<span class="material-symbols-outlined text-tertiary" data-icon="lock">lock</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Staked Value</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">$42,100.00</div>
+<p class="text-label-sm font-label-sm text-tertiary mt-2">Earn 4.2% APY</p>
+</div>
+</div>
+<!-- Transaction List -->
+<div class="md:col-span-12 glass-card p-8 rounded-xl mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-6">Recent Activity</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 border-b border-on-surface/5 hover:bg-surface-variant/10 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center rounded-xl border border-outline/20">
+<span class="material-symbols-outlined text-primary" data-icon="north_east">north_east</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-on-surface">Payment to AWS Cloud</div>
+<div class="font-label-sm text-label-sm text-outline">Bank Transfer • 2 mins ago</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-body-md text-body-md text-on-surface">-$1,240.00</div>
+<div class="font-label-sm text-label-sm text-primary">Pending</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 border-b border-on-surface/5 hover:bg-surface-variant/10 transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center rounded-xl border border-outline/20">
+<span class="material-symbols-outlined text-tertiary" data-icon="south_west">south_west</span>
+</div>
+<div>
+<div class="font-body-md text-body-md text-on-surface">ETH Deposit</div>
+<div class="font-label-sm text-label-sm text-outline">Digital Wallet • 1 hour ago</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-body-md text-body-md text-on-surface">+0.50 ETH</div>
+<div class="font-label-sm text-label-sm text-tertiary">Confirmed</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface/40 backdrop-blur-[20px] border-t border-on-surface/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] h-16 md:h-20 flex justify-around items-center px-4">
+<div class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary transition-all active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm mt-1">Dashboard</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container/20 text-primary rounded-xl p-2 shadow-[0_0_10px_rgba(80,217,228,0.3)] cursor-pointer">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm mt-1">Wallets</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary transition-all active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="add_box">add_box</span>
+<span class="font-label-sm text-label-sm mt-1">Add</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary transition-all active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="currency_exchange">currency_exchange</span>
+<span class="font-label-sm text-label-sm mt-1">Loans</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline p-2 hover:text-primary transition-all active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span class="font-label-sm text-label-sm mt-1">Trends</span>
+</div>
+</nav>
+<!-- Visual 3D Hero Object Placement (Abstract) -->
+<div class="fixed top-1/4 -right-24 w-64 h-64 opacity-20 pointer-events-none md:block hidden">
+<div class="w-full h-full bg-primary blur-[100px] rounded-full"></div>
+<img class="absolute inset-0 object-contain" data-alt="A futuristic isometric 3D object consisting of multiple interlocking glass shards and glowing circuits. The object is illuminated by internal teal and purple light sources that cast sharp, geometric shadows. The aesthetic is extremely high-tech and minimalist, matching a dark neo-cyber financial interface. High contrast and premium finish on every surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZBiNeF5ZPz9KkCIP-69JQNtUs7F_0cDVt3DpOXs6jkuKEgF22tkPhpDa0f_ihFzJownr2KpHuVyofWxG8ATAdMysCV8_EKXFccaU9ACvyEiZxnPIgE54EOUYjUt1QQyLUiz_KWcd-BZH_hkq54Z34-ZVgqceMKuURW9_vrjOc00QfblMS-9XXNKBARzzpkexbBfiovWtL4rw9Eea6TDzaBPmm7XtSbQbhn0X3wxEfRnkII4aB6KEtE1sss0X-KuulmFYMy12OSDql"/>
+</div>
+</body></html>

@@ -1,0 +1,7 @@
+{
+  "Ledger": ["Wallet"],
+  "Wallet": ["Transactions"],
+  "Loans": ["Payments"],
+  "Analytics": ["Ledger", "Wallet"],
+  "Forecast": ["Analytics"]
+}

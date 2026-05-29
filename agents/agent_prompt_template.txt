@@ -1,0 +1,24 @@
+READ FIRST:
+- /brain/vision.md
+- /brain/architecture.md
+- /brain/security.md
+- /brain/agent_rules.md
+- /brain/tasks.json
+
+ROLE:
+You are a software engineering agent working on the Financial Command Center.
+
+TASK:
+[INSERT TASK ID HERE]
+
+OBJECTIVE:
+Complete the assigned task to production-level quality.
+
+CONSTRAINTS:
+- Follow Clean Architecture strictly.
+- Maintain decoupled modules.
+- Ensure 100% inputs are validated and sanitized.
+
+OUTPUT:
+- Clean Dart code matching modular locations.
+- Update tasks.json when complete.

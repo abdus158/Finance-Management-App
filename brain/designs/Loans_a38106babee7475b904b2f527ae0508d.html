@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .neumorphic-recess {
+            box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 6px rgba(255, 255, 255, 0.05);
+        }
+        .glow-teal {
+            filter: drop-shadow(0 0 8px rgba(65, 228, 192, 0.4));
+        }
+        .glow-crimson {
+            filter: drop-shadow(0 0 8px rgba(255, 110, 130, 0.4));
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#002115",
+                      "surface": "#0c1324",
+                      "secondary-fixed": "#5ffbd6",
+                      "on-error": "#690005",
+                      "on-primary-container": "#78a891",
+                      "surface-container-lowest": "#070d1f",
+                      "on-tertiary-container": "#ff6e82",
+                      "on-tertiary": "#67001e",
+                      "on-surface-variant": "#c0c9c2",
+                      "on-primary-fixed-variant": "#204f3c",
+                      "surface-dim": "#0c1324",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#91002d",
+                      "tertiary-container": "#700021",
+                      "inverse-surface": "#dce1fb",
+                      "surface-container-low": "#151b2d",
+                      "on-secondary": "#00382d",
+                      "outline": "#8a938d",
+                      "on-secondary-fixed-variant": "#005142",
+                      "primary-fixed": "#bbeed3",
+                      "tertiary": "#ffb2b8",
+                      "surface-bright": "#33394c",
+                      "secondary-fixed-dim": "#38debb",
+                      "on-error-container": "#ffdad6",
+                      "outline-variant": "#414944",
+                      "surface-variant": "#2e3447",
+                      "inverse-on-surface": "#2a3043",
+                      "on-background": "#dce1fb",
+                      "surface-container-high": "#23293c",
+                      "tertiary-fixed-dim": "#ffb2b8",
+                      "primary": "#a0d1b8",
+                      "on-surface": "#dce1fb",
+                      "on-secondary-container": "#004d3f",
+                      "inverse-primary": "#396753",
+                      "background": "#0c1324",
+                      "secondary-container": "#00c7a5",
+                      "secondary": "#41e4c0",
+                      "surface-tint": "#a0d1b8",
+                      "on-secondary-fixed": "#002019",
+                      "surface-container-highest": "#2e3447",
+                      "primary-fixed-dim": "#a0d1b8",
+                      "primary-container": "#0a3d2b",
+                      "tertiary-fixed": "#ffdadb",
+                      "on-tertiary-fixed": "#40000f",
+                      "error": "#ffb4ab",
+                      "surface-container": "#191f31",
+                      "on-primary": "#033826"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "container-padding-mobile": "20px",
+                      "gutter": "16px",
+                      "container-padding-desktop": "40px",
+                      "unit": "8px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "display-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-padding-mobile py-stack-sm bg-surface/20 backdrop-blur-xl border-b border-white/10 shadow-sm">
+<div class="flex items-center gap-stack-md">
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden border border-white/20">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a person with a friendly expression, captured with high-end studio lighting against a dark, moody background. The skin tones are natural, highlighted by soft rim lighting that adds depth. The overall aesthetic is clean, luxurious, and modern, fitting for a premium financial executive profile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdV9oICELFsUPWXvyZPiJehME8T_WMAE7F9cj9exfnxcAgJ8_sGuTLytazcIDsdpRCCkOtrIKliZ-AU1MyJ6vgo_D-ecCBpPzcRtCiYANkjpal_6GVgodGgy2tw3g_jXaelLLZ4tVrxAnI8g1sVWB1awZWXBuReIDo3vZpwKZ7cVEYDcI8ONILY4C1qzC0QfSKrCrnKbIF2L-GELHdnOOCHCrZsG03HZ-MYBgKuMBBby4Sz-B6UBPR6Wkfj5vRN3oB8n8f0UyyV6MH"/>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface">FCC</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-surface-variant/30 transition-all duration-300 ease-in-out active:scale-95 text-primary">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-container-padding-mobile max-w-5xl mx-auto space-y-stack-lg">
+<!-- Summary Dashboard Header -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="glass-card p-stack-md rounded-xl flex flex-col justify-between h-32 border-l-4 border-l-secondary">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Total Receivables</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-headline-lg text-secondary glow-teal">$42,500.00</span>
+<span class="font-label-sm text-label-sm text-secondary">+12%</span>
+</div>
+</div>
+<div class="glass-card p-stack-md rounded-xl flex flex-col justify-between h-32 border-l-4 border-l-on-tertiary-container">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Total Payables</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-headline-lg text-on-tertiary-container glow-crimson">$18,240.50</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">-4%</span>
+</div>
+</div>
+</section>
+<!-- Money Given (Receivables) Section -->
+<section class="space-y-stack-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="call_made">call_made</span>
+                    Money Given
+                </h2>
+<span class="font-label-md text-label-md text-on-surface-variant">4 Active Loans</span>
+</div>
+<div class="space-y-gutter">
+<!-- Item 1 -->
+<div class="glass-card p-stack-md rounded-xl flex items-center justify-between group hover:bg-white/10 transition-colors">
+<div class="flex items-center gap-stack-md">
+<div class="w-12 h-12 rounded-lg neumorphic-recess flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Vertex Holdings</p>
+<p class="font-label-sm text-on-surface-variant">Due Oct 24, 2023</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-secondary">$25,000.00</p>
+<div class="flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="schedule">schedule</span>
+<span class="font-label-sm text-on-surface-variant uppercase">Pending</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="glass-card p-stack-md rounded-xl flex items-center justify-between group hover:bg-white/10 transition-colors">
+<div class="flex items-center gap-stack-md">
+<div class="w-12 h-12 rounded-lg neumorphic-recess flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="apartment">apartment</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Nexus Dev Group</p>
+<p class="font-label-sm text-on-surface-variant">Due Nov 02, 2023</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-secondary">$12,500.00</p>
+<div class="flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span>
+<span class="font-label-sm text-on-surface-variant uppercase">Partial</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Money Owed (Payables) Section -->
+<section class="space-y-stack-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="call_received">call_received</span>
+                    Money Owed
+                </h2>
+<span class="font-label-md text-label-md text-on-surface-variant">2 Liabilities</span>
+</div>
+<div class="space-y-gutter">
+<!-- Item 3 -->
+<div class="glass-card p-stack-md rounded-xl flex items-center justify-between group hover:bg-white/10 transition-colors">
+<div class="flex items-center gap-stack-md">
+<div class="w-12 h-12 rounded-lg neumorphic-recess flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Capital One Bank</p>
+<p class="font-label-sm text-on-tertiary-container">Overdue by 3 days</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-on-tertiary-container">$15,000.00</p>
+<div class="flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm" data-icon="warning">warning</span>
+<span class="font-label-sm text-on-tertiary-container uppercase">Urgent</span>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="glass-card p-stack-md rounded-xl flex items-center justify-between group hover:bg-white/10 transition-colors">
+<div class="flex items-center gap-stack-md">
+<div class="w-12 h-12 rounded-lg neumorphic-recess flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="store">store</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-semibold">Supplier Logistics</p>
+<p class="font-label-sm text-on-surface-variant">Due Dec 01, 2023</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-headline-md text-on-tertiary-container">$3,240.50</p>
+<div class="flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" data-icon="sync">sync</span>
+<span class="font-label-sm text-on-surface-variant uppercase">Recurring</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-surface-container/40 backdrop-blur-2xl border-t border-white/20 shadow-[0_-4px_20px_rgba(0,0,0,0.4)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-sm text-label-sm-mobile">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm-mobile">Wallets</span>
+</a>
+<button class="flex flex-col items-center justify-center text-secondary active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined text-4xl glow-teal" data-icon="add_circle" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</button>
+<a class="flex flex-col items-center justify-center text-secondary drop-shadow-[0_0_8px_rgba(65,228,192,0.6)] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long" style="font-variation-settings: 'FILL' 1;">receipt_long</span>
+<span class="font-label-sm text-label-sm-mobile">Loans</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span class="font-label-sm text-label-sm-mobile">Trends</span>
+</a>
+</nav>
+</body></html>

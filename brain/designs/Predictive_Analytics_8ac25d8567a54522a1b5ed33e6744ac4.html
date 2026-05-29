@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FinTrack | Predictive Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(134, 148, 138, 0.2);
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+        }
+        .glow-emerald {
+            box-shadow: 0 0 20px rgba(78, 222, 163, 0.2);
+        }
+        .glow-amber {
+            box-shadow: 0 0 15px rgba(255, 185, 95, 0.3);
+        }
+        /* Custom Spline Chart Simulation */
+        .spline-container {
+            position: relative;
+            height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .spline-path {
+            fill: none;
+            stroke: #4edea3;
+            stroke-width: 3;
+            filter: drop-shadow(0 0 8px rgba(78, 222, 163, 0.8));
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "surface-container": "#171f33",
+                        "on-secondary-fixed": "#410004",
+                        "on-primary-fixed": "#002113",
+                        "primary-container": "#10b981",
+                        "on-secondary": "#68000a",
+                        "error": "#ffb4ab",
+                        "outline": "#86948a",
+                        "surface": "#0b1326",
+                        "secondary-container": "#a40217",
+                        "on-secondary-fixed-variant": "#930013",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#6ffbbe",
+                        "surface-dim": "#0b1326",
+                        "surface-variant": "#2d3449",
+                        "secondary-fixed": "#ffdad7",
+                        "surface-container-low": "#131b2e",
+                        "inverse-primary": "#006c49",
+                        "inverse-on-surface": "#283044",
+                        "on-primary-container": "#00422b",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "on-tertiary-container": "#523200",
+                        "tertiary-container": "#e29100",
+                        "surface-container-high": "#222a3d",
+                        "tertiary": "#ffb95f",
+                        "on-background": "#dae2fd",
+                        "on-surface-variant": "#bbcabf",
+                        "outline-variant": "#3c4a42",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#ffaea8",
+                        "surface-container-lowest": "#060e20",
+                        "on-surface": "#dae2fd",
+                        "on-primary-fixed-variant": "#005236",
+                        "surface-container-highest": "#2d3449",
+                        "primary-fixed-dim": "#4edea3",
+                        "primary": "#4edea3",
+                        "secondary": "#ffb3ad",
+                        "surface-bright": "#31394d",
+                        "secondary-fixed-dim": "#ffb3ad",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-tertiary": "#472a00",
+                        "background": "#0b1326",
+                        "on-primary": "#003824",
+                        "inverse-surface": "#dae2fd",
+                        "surface-tint": "#4edea3",
+                        "on-tertiary-fixed": "#2a1700",
+                        "on-tertiary-fixed-variant": "#653e00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "unit": "8px",
+                        "container-margin-mobile": "20px",
+                        "container-margin-desktop": "40px",
+                        "stack-sm": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "numeric-data": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "numeric-data": ["20px", {"lineHeight": "24px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-surface/50 backdrop-blur-xl border-b border-surface-variant/30 shadow-2xl flex justify-between items-center px-container-margin-mobile py-4">
+<div class="flex items-center gap-3 active:scale-95 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary drop-shadow-[0_0_8px_rgba(78,222,163,0.5)]">FinTrack</h1>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-sm text-label-sm text-primary border-b-2 border-primary pb-1" href="#">Wealth</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:bg-surface-bright/20 transition-all duration-300 rounded px-2" href="#">Analysis</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/70 hover:bg-surface-bright/20 transition-all duration-300 rounded px-2" href="#">Markets</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant p-2 hover:bg-surface-bright/20 rounded-full transition-all" data-icon="notifications">notifications</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/30">
+<img alt="Profile" data-alt="A professional corporate portrait of a financial executive in a high-tech office. The lighting is moody and cinematic with cool blue and emerald green tones reflecting off polished glass surfaces. He is wearing a dark, modern suit. The background is a blurred cityscape of a futuristic metropolis at night, emphasizing a visionary and authoritative aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBytEQ76KCupXsjisSruSDleIZfO7YfcL5yG-z27QC6oMnDHrQZxhPtljtmnSuXQK0mVBs4IxGMvfcZiqX_vmoBRT-35pOICdr8gE5f2vOFa-D9zMgSeY8pFSC8CqrsxlYfqv8Sg-lxHFnMALT9jM4X0tu2Ipdr-YZMH9YwSXCDpwnl--skMjPLfCLTz32UW7Ag4CaPexnpqQFAWzQ79h0S4y3qctLjQrT2QZZYdVXWiI172oX_q1oB2Z_JgmpHIXTCeOw41bn60QE0"/>
+</div>
+</div>
+</header>
+<main class="px-container-margin-mobile md:px-container-margin-desktop py-stack-lg max-w-7xl mx-auto space-y-stack-lg">
+<!-- Alert Banner -->
+<section class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-tertiary/20 to-tertiary-container/10 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<div class="relative flex items-center gap-4 p-4 rounded-xl border border-tertiary/20 bg-surface-container-low/80 backdrop-blur-md glow-amber">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="warning" data-weight="fill" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex-1">
+<p class="font-body-md text-body-md text-tertiary-fixed font-medium">Warning: Potential cash crunch next week based on upcoming bills.</p>
+</div>
+<button class="text-tertiary text-sm font-semibold hover:underline">Review Bills</button>
+</div>
+</section>
+<!-- Main Analytics Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Spline Chart Card (8 Columns) -->
+<section class="lg:col-span-8 glass-card rounded-2xl p-stack-lg space-y-stack-md">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">30-Day Cash Projection</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Estimated liquidity trend based on recurrent spending</p>
+</div>
+<div class="text-right">
+<span class="font-numeric-data text-numeric-data text-primary">+$12,450.00</span>
+<p class="font-label-sm text-label-sm text-primary/60">Predicted Surplus</p>
+</div>
+</div>
+<div class="spline-container flex items-end pt-8">
+<!-- SVG Spline Line Chart -->
+<svg class="w-full h-full preserve-3d" viewbox="0 0 1000 200">
+<defs>
+<lineargradient id="lineGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" style="stop-color:#4edea3;stop-opacity:0.2"></stop>
+<stop offset="50%" style="stop-color:#4edea3;stop-opacity:1"></stop>
+<stop offset="100%" style="stop-color:#4edea3;stop-opacity:0.5"></stop>
+</lineargradient>
+</defs>
+<!-- Grid lines (subtle) -->
+<line stroke="rgba(255,255,255,0.05)" x1="0" x2="1000" y1="50" y2="50"></line>
+<line stroke="rgba(255,255,255,0.05)" x1="0" x2="1000" y1="100" y2="100"></line>
+<line stroke="rgba(255,255,255,0.05)" x1="0" x2="1000" y1="150" y2="150"></line>
+<!-- Smooth Spline Path -->
+<path class="spline-path" d="M0,150 C100,140 150,180 250,170 C350,160 400,80 500,70 C600,60 650,120 750,110 C850,100 900,40 1000,30"></path>
+<!-- Pulse Point at Projection -->
+<circle class="animate-pulse" cx="1000" cy="30" fill="#4edea3" r="4"></circle>
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant/50 pt-4">
+<span>TODAY</span>
+<span>10 DAYS</span>
+<span>20 DAYS</span>
+<span>30 DAYS</span>
+</div>
+</section>
+<!-- Major Expenses (4 Columns) -->
+<section class="lg:col-span-4 space-y-stack-md">
+<h3 class="font-headline-md text-headline-md px-2">Upcoming Peaks</h3>
+<!-- Rent Card -->
+<div class="glass-card rounded-xl p-stack-md flex items-center gap-4 hover:border-primary/40 transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md text-body-md font-semibold">Monthly Rent</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Due in 4 days</p>
+</div>
+<div class="text-right">
+<span class="font-numeric-data text-numeric-data">$3,200</span>
+</div>
+</div>
+<!-- Utilities Card -->
+<div class="glass-card rounded-xl p-stack-md flex items-center gap-4 hover:border-primary/40 transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md text-body-md font-semibold">Utilities</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Avg. predicted cost</p>
+</div>
+<div class="text-right">
+<span class="font-numeric-data text-numeric-data">$412</span>
+</div>
+</div>
+<!-- Insurance Card -->
+<div class="glass-card rounded-xl p-stack-md flex items-center gap-4 hover:border-primary/40 transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+</div>
+<div class="flex-1">
+<h4 class="font-body-md text-body-md font-semibold">Premium Payout</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Annual renewal</p>
+</div>
+<div class="text-right">
+<span class="font-numeric-data text-numeric-data">$1,850</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Predictive Insights Section (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-6 rounded-2xl flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="font-headline-md text-headline-md">Smart Save</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/80">AI suggests moving $500 to High-Yield Vault based on surplus velocity.</p>
+<button class="mt-auto py-3 bg-primary text-on-primary font-bold rounded-lg shadow-lg active:scale-95 transition-transform">Transfer Now</button>
+</div>
+<div class="md:col-span-2 glass-card rounded-2xl relative overflow-hidden flex items-center">
+<div class="p-8 z-10 w-full md:w-1/2">
+<h4 class="font-headline-md text-headline-md mb-2">Market Volatility Impact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant/80 mb-6">Your portfolio has a 78% correlation with tech index movements today.</p>
+<div class="flex gap-4">
+<div class="px-4 py-2 bg-surface-container-highest rounded-full border border-outline-variant/30 text-label-sm">High Accuracy</div>
+<div class="px-4 py-2 bg-surface-container-highest rounded-full border border-outline-variant/30 text-label-sm">Real-time Data</div>
+</div>
+</div>
+<div class="absolute right-0 top-0 h-full w-1/2 hidden md:block">
+<img alt="Predictive Analytics Visual" class="w-full h-full object-cover opacity-60 mix-blend-screen" data-alt="A macro shot of a complex 3D digital data visualization. Glowing neural networks and interconnecting nodes pulse with emerald and sapphire light against a pitch-black background. The aesthetic is ultra-futuristic, high-contrast, and clean, representing deep learning and financial algorithmic processing. Sharp focus and shallow depth of field create a sense of premium technical sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD31xWx81aqUUTwsHCIkDunV4jPlMTwnLIRvxHAsIOvkZkAGb11vVRacRLO6O72Rlbv4gnw8XIYe9Cj97jzt1qzNUdBKTpT6RsxjMpc9KoJJv9rwrbu_9frrm6o9GlnRlGkJwFr4KNIHqzvyoHSG7liGNsLBFzXLpYqIwoHpu9T2EqsMG5Nakr6Fr98uMrUNuc0z8y9jjA60XcdcJ_qrMk1-afywlrkk5lt_6elE7JzIYP4L5UkNnTMkMuy7JTFOFZFn2-amKzwAX4F"/>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-end pb-6 pt-2 px-4 bg-surface-container/40 backdrop-blur-2xl border-t border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] md:hidden">
+<div class="flex flex-col items-center justify-center text-on-surface-variant/50 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Wealth</span>
+</div>
+<div class="flex flex-col items-center justify-center text-primary drop-shadow-[0_0_12px_rgba(78,222,163,0.6)] active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="query_stats" data-weight="fill" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Analysis</span>
+</div>
+<div class="mb-4">
+<div class="w-14 h-14 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-xl active:scale-90 transition-all">
+<span class="material-symbols-outlined text-4xl" data-icon="add">add</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/50 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Markets</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant/50 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest mt-1">Settings</span>
+</div>
+</nav>
+</body></html>

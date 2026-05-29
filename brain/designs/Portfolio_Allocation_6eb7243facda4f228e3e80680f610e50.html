@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface-variant": "#bbc9ca",
+                      "inverse-primary": "#006970",
+                      "background": "#0e1415",
+                      "surface-tint": "#50d9e4",
+                      "on-secondary": "#440087",
+                      "tertiary-fixed-dim": "#d2bcff",
+                      "on-tertiary-fixed-variant": "#5621b1",
+                      "primary-fixed": "#7bf4ff",
+                      "error-container": "#93000a",
+                      "surface-container-lowest": "#090f10",
+                      "on-primary-fixed": "#002022",
+                      "primary": "#50d9e4",
+                      "surface-container": "#1b2121",
+                      "on-error-container": "#ffdad6",
+                      "on-primary": "#00363a",
+                      "surface-container-highest": "#303636",
+                      "tertiary-container": "#b898ff",
+                      "inverse-surface": "#dee4e4",
+                      "error": "#ffb4ab",
+                      "outline": "#869394",
+                      "secondary-fixed": "#eddcff",
+                      "on-secondary-fixed": "#290055",
+                      "on-error": "#690005",
+                      "inverse-on-surface": "#2b3132",
+                      "on-secondary-fixed-variant": "#610bb8",
+                      "on-secondary-container": "#cca8ff",
+                      "tertiary-fixed": "#eaddff",
+                      "surface-variant": "#303636",
+                      "secondary-fixed-dim": "#d7baff",
+                      "outline-variant": "#3c494a",
+                      "on-tertiary-fixed": "#24005b",
+                      "surface": "#0e1415",
+                      "primary-fixed-dim": "#50d9e4",
+                      "primary-container": "#22bbc6",
+                      "on-surface": "#dee4e4",
+                      "surface-container-high": "#252b2c",
+                      "on-background": "#dee4e4",
+                      "on-tertiary-container": "#4d12a8",
+                      "on-tertiary": "#3d008f",
+                      "secondary-container": "#6311bb",
+                      "secondary": "#d7baff",
+                      "surface-container-low": "#171d1d",
+                      "tertiary": "#d2bcff",
+                      "on-primary-fixed-variant": "#004f54",
+                      "surface-dim": "#0e1415",
+                      "surface-bright": "#343a3b",
+                      "on-primary-container": "#00464b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "max-width": "1440px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Space Grotesk"],
+                      "headline-lg": ["Outfit"],
+                      "display-lg": ["Outfit"],
+                      "body-lg": ["Space Grotesk"],
+                      "label-md": ["Space Grotesk"],
+                      "headline-lg-mobile": ["Outfit"],
+                      "headline-md": ["Outfit"],
+                      "body-md": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { background-color: #0e1415; color: #dee4e4; -webkit-font-smoothing: antialiased; }
+        .glass-panel {
+            background: rgba(27, 33, 33, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(240, 240, 240, 0.1);
+        }
+        .neon-teal-shadow { filter: drop-shadow(0 0 8px rgba(34, 187, 198, 0.4)); }
+        .neon-purple-shadow { filter: drop-shadow(0 0 8px rgba(157, 92, 246, 0.4)); }
+        .square-dot { width: 8px; height: 8px; border-radius: 0; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 sticky bg-background/40 backdrop-blur-xl border-b border-on-surface/10 shadow-[0_0_15px_rgba(34,187,198,0.2)] flex justify-between items-center px-margin-mobile h-16 z-50 md:px-margin-desktop">
+<div class="flex items-center gap-4">
+<!-- EN Hexagonal Logo Placeholder -->
+<div class="w-10 h-10 bg-primary-container flex items-center justify-center clip-path-hexagon" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
+<span class="font-headline-md text-on-primary-container font-bold">EN</span>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">FinTrack</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="text-primary font-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Debt</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md" href="#">Insight</a>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a modern executive in a minimalist studio setting. The lighting is soft and cinematic with cool teal rim lights that reflect the futuristic financial app's aesthetic. The individual has a confident expression, wearing a sleek dark turtleneck against a deep charcoal background with subtle digital particle effects." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnaQ909QWg61Z4Xp6XHpx9-haxDLNtmvuMT5BlKhOq-f-ntfvdd-s4bALdxDbYVyr8C05zaObpj3ajF6TsgRSeNx0K2eDHyMJzf7keuGYvFQj37dtyLDBLOfQjNuEiNv-jrK0m1uZRMHGV_bHgMcFUqGcL1pfUevZ8-xTjdkbtFF3SPdZu1kERJec-wG098e-w3Ls0mm-eBiAQFy1FV9okcwQNyDcp_KBdPE4ufYZ8eN3Yzk-w3EITuqt2dV4HV9DPIOFVNgzMzdqp"/>
+</div>
+</div>
+</header>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Hero Section: Portfolio Header -->
+<div class="mb-12">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Portfolio Allocation</h2>
+<p class="text-on-surface-variant max-w-xl">A high-fidelity breakdown of your global wealth across major asset classes, updated in real-time with neon-enhanced analytics.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Visual: Donut Chart Section -->
+<div class="lg:col-span-7 glass-panel rounded-xl p-8 flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Isometric 3D Decorative Object (Simulated via prompt) -->
+<div class="absolute -top-10 -right-10 w-48 h-48 opacity-20 pointer-events-none">
+<img alt="3D Glass Sphere" class="w-full h-full object-contain" data-alt="An isometric 3D render of a complex glass geometric structure with sharp edges and multiple internal facets. The object is illuminated by a primary teal light source and a secondary deep purple light, creating visible depth and light-source simulation with no gradients. It floats in a dark void, casting a soft teal neon glow on the invisible floor below, perfectly aligning with a futuristic neo-cyber financial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5sK6K4k-KOC6ohlbTXjHWEwOdZqnHA-zTW9cjBNG473ciqjN-gwI2PUms4ta6jm4ZYlO_I5fcovuPaxgCbII4ee0ji0OgWPzjKXijc3rfldF6dPeN4cGZrYeGb4pbR7SsWEQ_euDP7pRg8N2n3GZWZTsE7BvtxvI_SnZ4KzJAus3rjvEEl4RGPodU7DEhr9ZvBWc9HOwe5nqlrHMDPScHl48ioM76JPIecKL2E1G1-huHYW-ynjJ0tOCLu7-AxnyEbMRQ3Up-fVGb"/>
+</div>
+<div class="relative w-64 h-64 md:w-80 md:h-80">
+<!-- SVG Donut Chart (Flat Filled) -->
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Cash (20%) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#6311bb" stroke-dasharray="20 80" stroke-dashoffset="0" stroke-width="4"></circle>
+<!-- Crypto (15%) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#9d5cf6" stroke-dasharray="15 85" stroke-dashoffset="-20" stroke-width="4"></circle>
+<!-- Stocks (65%) -->
+<circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#22bbc6" stroke-dasharray="65 35" stroke-dashoffset="-35" stroke-width="4"></circle>
+</svg>
+<!-- Center Display -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Total Value</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$1,248,500</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +4.2%
+                        </span>
+</div>
+</div>
+<!-- Legend -->
+<div class="mt-8 flex flex-wrap justify-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-[#22bbc6] rounded-sm"></div>
+<span class="font-label-md text-label-md text-on-surface">Stocks (65%)</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-[#9d5cf6] rounded-sm"></div>
+<span class="font-label-md text-label-md text-on-surface">Crypto (15%)</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 bg-[#6311bb] rounded-sm"></div>
+<span class="font-label-md text-label-md text-on-surface">Cash (20%)</span>
+</div>
+</div>
+</div>
+<!-- Side Stats/Insight Section -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<div class="glass-panel rounded-xl p-6 flex-1">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface">Quick Insights</h3>
+<span class="material-symbols-outlined text-primary">lightbulb</span>
+</div>
+<ul class="space-y-4">
+<li class="p-4 border border-outline/10 rounded-lg bg-surface-container/20">
+<p class="font-label-md text-label-md text-primary mb-1">Diversification Score</p>
+<div class="flex items-end gap-2">
+<span class="font-headline-md text-on-surface">84/100</span>
+<span class="text-label-sm text-on-surface-variant mb-1">Strong</span>
+</div>
+</li>
+<li class="p-4 border border-outline/10 rounded-lg bg-surface-container/20">
+<p class="font-label-md text-label-md text-secondary mb-1">Projected Annual Yield</p>
+<div class="flex items-end gap-2">
+<span class="font-headline-md text-on-surface">12.4%</span>
+<span class="text-label-sm text-on-surface-variant mb-1">Est. $154k</span>
+</div>
+</li>
+</ul>
+<button class="w-full mt-6 py-4 bg-primary text-on-primary font-bold rounded-lg neon-teal-shadow active:scale-95 transition-all">
+                        Optimize Allocation
+                    </button>
+</div>
+</div>
+</div>
+<!-- Asset Classes List Section -->
+<section class="mt-12">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline-md text-headline-md text-on-surface">Asset Breakdown</h3>
+<div class="flex gap-2">
+<div class="square-dot bg-primary"></div>
+<div class="square-dot bg-outline/40"></div>
+<div class="square-dot bg-outline/40"></div>
+</div>
+</div>
+<div class="glass-panel rounded-xl overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container/40">
+<tr>
+<th class="px-6 py-4 font-label-md text-outline">Asset Class</th>
+<th class="px-6 py-4 font-label-md text-outline">Current Value</th>
+<th class="px-6 py-4 font-label-md text-outline hidden md:table-cell">24h Performance</th>
+<th class="px-6 py-4 font-label-md text-outline text-right">Trend</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline/10">
+<!-- Row 1: Stocks -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">monitoring</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-bold">Global Stocks</p>
+<p class="text-label-sm text-outline">65% of Total</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<p class="font-body-md text-on-surface">$811,525.00</p>
+</td>
+<td class="px-6 py-6 hidden md:table-cell">
+<span class="text-primary font-label-md">+1.85%</span>
+</td>
+<td class="px-6 py-6 text-right">
+<svg class="inline-block w-24 h-8" viewbox="0 0 100 30">
+<path class="neon-teal-shadow" d="M0,25 L10,22 L20,24 L30,18 L40,20 L50,15 L60,10 L70,12 L80,5 L90,8 L100,2" fill="none" stroke="#22bbc6" stroke-width="2"></path>
+</svg>
+</td>
+</tr>
+<!-- Row 2: Crypto -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">currency_bitcoin</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-bold">Digital Assets</p>
+<p class="text-label-sm text-outline">15% of Total</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<p class="font-body-md text-on-surface">$187,275.00</p>
+</td>
+<td class="px-6 py-6 hidden md:table-cell">
+<span class="text-error font-label-md">-2.40%</span>
+</td>
+<td class="px-6 py-6 text-right">
+<svg class="inline-block w-24 h-8" viewbox="0 0 100 30">
+<path d="M0,5 L10,8 L20,5 L30,12 L40,10 L50,18 L60,15 L70,22 L80,20 L90,28 L100,25" fill="none" stroke="#ffb4ab" stroke-width="2"></path>
+</svg>
+</td>
+</tr>
+<!-- Row 3: Cash -->
+<tr class="hover:bg-primary/5 transition-colors group">
+<td class="px-6 py-6">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-tertiary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">account_balance_wallet</span>
+</div>
+<div>
+<p class="font-body-md text-on-surface font-bold">Liquidity &amp; Cash</p>
+<p class="text-label-sm text-outline">20% of Total</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-6">
+<p class="font-body-md text-on-surface">$249,700.00</p>
+</td>
+<td class="px-6 py-6 hidden md:table-cell">
+<span class="text-on-surface-variant font-label-md">+0.01%</span>
+</td>
+<td class="px-6 py-6 text-right">
+<svg class="inline-block w-24 h-8" viewbox="0 0 100 30">
+<path d="M0,15 L20,15 L40,14 L60,15 L80,15 L100,15" fill="none" stroke="#869394" stroke-width="2"></path>
+</svg>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Navigation Drawer (Desktop Hidden by default, showing structure) -->
+<div class="fixed inset-0 bg-background/60 backdrop-blur-md z-40 hidden" id="overlay"></div>
+<aside class="fixed left-0 top-0 h-full w-80 bg-surface-container-high/90 backdrop-blur-3xl border-r border-on-surface/10 shadow-2xl transition-transform -translate-x-full z-50 flex flex-col py-8" id="drawer">
+<div class="px-8 mb-12">
+<div class="flex items-center gap-4 mb-2">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
+<img alt="Alex Sterling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdGrFiwYmxGez3LCU4dwCH1yFuZnbRCwF2lAWQhoSfp96Au4hpuRcMwKMInRGuSZ_D98rlTublApnDfm47wMgFMjc-mdR8TZdWSSgETN89Qpj7IHRJMqOcvBoTNnU9Jy0cPKLQz2oIj-Zg4e8FYofm5cgioG8zBwl4v6Uv9MEhEkHztHO9R7D-y2FDzp6eSHwo7sOTH5ZpYjM1B5wG1JEJ1wXPN3g_2bVeFC43cuFlXW7KsnoxG5D6745fqQVAM5i7c415j8KBl4J-"/>
+</div>
+<div>
+<h4 class="font-headline-md text-primary">Alex Sterling</h4>
+<p class="text-label-sm text-outline">Premium Member</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<a class="flex items-center gap-4 px-4 py-3 bg-primary/20 text-primary border-l-4 border-primary rounded-r-lg" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-body-md">Switch to Personal</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">business_center</span>
+<span class="font-body-md">Switch to Business</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">shield</span>
+<span class="font-body-md">Security Settings</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-colors rounded-lg" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-body-md">Help Support</span>
+</a>
+</nav>
+<div class="px-8 mt-auto">
+<p class="text-label-sm text-outline">v2.4.0</p>
+</div>
+</aside>
+<!-- Bottom Navigation Bar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-full bg-surface-container/30 backdrop-blur-2xl border-t border-on-surface/10 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 px-2 pb-safe md:hidden">
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform active:scale-90">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform active:scale-90">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="font-label-sm text-label-sm">Debt</span>
+</div>
+<div class="flex flex-col items-center justify-center text-primary drop-shadow-[0_0_8px_rgba(80,217,228,0.8)] transition-transform active:scale-90">
+<div class="bg-primary p-3 rounded-full -mt-10 shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined text-on-primary">add</span>
+</div>
+<span class="font-label-sm text-label-sm mt-1">Action</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform active:scale-90">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm">Insight</span>
+</div>
+<div class="flex flex-col items-center justify-center text-outline hover:text-primary-fixed transition-transform active:scale-90">
+<span class="material-symbols-outlined">more_horiz</span>
+<span class="font-label-sm text-label-sm">Menu</span>
+</div>
+</nav>
+<!-- Floating Action Button (Contextual) -->
+<button class="hidden md:flex fixed right-8 bottom-8 w-16 h-16 bg-primary text-on-primary items-center justify-center rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all z-40 neon-teal-shadow">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</body></html>

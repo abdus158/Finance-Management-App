@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Database Initialization & Schema Configuration",
+    "status": "completed",
+    "owner": "BACKEND_AGENT",
+    "dependencies": []
+  },
+  {
+    "id": 2,
+    "title": "State Management Provider Integration",
+    "status": "completed",
+    "owner": "BACKEND_AGENT",
+    "dependencies": [1]
+  },
+  {
+    "id": 3,
+    "title": "Core Tab Shell & Bottom Navigation Bar",
+    "status": "completed",
+    "owner": "UI_AGENT",
+    "dependencies": [2]
+  },
+  {
+    "id": 4,
+    "title": "Smart Ledger List & Add Entry Transaction Modal",
+    "status": "completed",
+    "owner": "UI_AGENT",
+    "dependencies": [2, 3]
+  },
+  {
+    "id": 5,
+    "title": "Wallet List Dashboard & Internal Funds Transfer Modals",
+    "status": "completed",
+    "owner": "UI_AGENT",
+    "dependencies": [2, 3]
+  },
+  {
+    "id": 6,
+    "title": "Receivables & Payables Installment Engines",
+    "status": "completed",
+    "owner": "BACKEND_AGENT",
+    "dependencies": [2, 3]
+  },
+  {
+    "id": 7,
+    "title": "Interactive ECharts Integration using Graphify",
+    "status": "completed",
+    "owner": "UI_AGENT",
+    "dependencies": [2, 3]
+  },
+  {
+    "id": 8,
+    "title": "Advanced Dynamic Forecasting Alerts & Trust Score Calculations",
+    "status": "completed",
+    "owner": "BACKEND_AGENT",
+    "dependencies": [1, 2]
+  },
+  {
+    "id": 9,
+    "title": "Automatic Background Cloud Sync Engine",
+    "status": "pending",
+    "owner": "BACKEND_AGENT",
+    "dependencies": [2]
+  },
+  {
+    "id": 10,
+    "title": "Receipt Scanning OCR Integration",
+    "status": "pending",
+    "owner": "UI_AGENT",
+    "dependencies": [2, 4]
+  }
+]
