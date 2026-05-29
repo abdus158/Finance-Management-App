@@ -48,14 +48,7 @@ class _SecurityLockScreenState extends State<SecurityLockScreen>
     _fadeAnimation =
         CurvedAnimation(parent: _fadeController, curve: Curves.easeOut);
 
-    if (kIsWeb) {
-      // Web: SQLite WASM requires SharedArrayBuffer which needs specific server
-      // headers not available in all environments. Skip lock screen for web demo.
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) _navigateToMain();
-      });
-      return;
-    }
+    // Initialize checks on all platforms (web lock screen enabled)
     _checkUserExists();
     _checkBiometric();
   }
